@@ -1100,23 +1100,23 @@ fieldset[disabled] .btn-theme {
 }
 
 .bg-color-heading {
-  background: #515769 !important;
+  background: #2b2b2b !important;
 }
 
 .bg-color-subtitle {
-  background: #a6a7aa !important;
+  background: #3e4763 !important;
 }
 
 .bg-color-link {
-  background: #81848f !important;
+  background: #3e8338 !important;
 }
 
 .bg-color-link-hover {
-  background: #999caa !important;
+  background: #455fd4 !important;
 }
 
 .bg-color-sky-light {
-  background: #fafafa !important;
+  background: #7c2828 !important;
 }
 
 /*------------------------------------------------------------------
