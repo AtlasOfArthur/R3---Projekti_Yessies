@@ -48,12 +48,12 @@ li a {
   font-size: 16px;
   font-weight: 500;
   font-family: Hind, sans-serif;
-  color: #515769;
+  color: #51ff00;
 }
 
 a {
   font-family: Hind, sans-serif;
-  color: #81848f;
+  color: #ae00ff;
   outline: 0;
 }
 
@@ -89,9 +89,9 @@ span {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-weight: 700;
+  font-weight: 7000;
   font-family: Hind, sans-serif;
-  color: #515769;
+  color: #0040ff;
   line-height: 1.4;
   margin: 0 0 15px;
 }
@@ -110,15 +110,15 @@ h1 > a:focus, h2 > a:focus, h3 > a:focus, h4 > a:focus, h5 > a:focus, h6 > a:foc
 }
 
 h1 {
-  font-size: 40px;
+  font-size: 400px;
 }
 
 h2 {
-  font-size: 30px;
+  font-size: 300px;
 }
 
 h3 {
-  font-size: 22px;
+  font-size: 220px;
 }
 
 h4 {
@@ -838,27 +838,27 @@ fieldset[disabled] .btn-theme {
 }
 
 .bg-color-white {
-  background: #fff;
+  background: #ff008c;
 }
 
 .bg-color-heading {
-  background: #515769;
+  background: #1eff00;
 }
 
 .bg-color-subtitle {
-  background: #a6a7aa;
+  background: #fbff00;
 }
 
 .bg-color-link {
-  background: #81848f;
+  background: #ff00b3;
 }
 
 .bg-color-link-hover {
-  background: #999caa;
+  background: #00aeff;
 }
 
 .bg-color-sky-light {
-  background: #fafafa;
+  background: #ff0000;
 }
 
 /*------------------------------------------------------------------

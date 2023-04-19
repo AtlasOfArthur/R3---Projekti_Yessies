@@ -22,7 +22,9 @@
   	[The "base.scss" contains basic default element styles
   		(colors, typography, margins & padding).]
 ------------------------------------------------------------------*/
+
 html {
+  @import url('https://fonts.googleapis.com/css2?family=Sofia+Sans+Extra+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
   overflow-x: hidden;
 }
 
@@ -50,7 +52,7 @@ li a {
   font-size: 16px;
   font-weight: 500;
   font-family: Hind, sans-serif;
-  color: #515769;
+  color: #ff00b3;
 }
 
 a {
@@ -87,23 +89,23 @@ span {
   font-size: 14px;
   font-weight: 400;
   font-family: Hind, sans-serif;
-  color: #bfc1c7;
+  color: #002db4;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-weight: 700;
+  font-weight: 7000;
   font-family: Hind, sans-serif;
-  color: #515769;
+  color: #f800cf;
   line-height: 1.4;
   margin: 0 0 15px;
 }
 
 h1 > a, h2 > a, h3 > a, h4 > a, h5 > a, h6 > a {
-  color: #515769;
+  color: #00ff00;
 }
 
 h1 > a:hover, h2 > a:hover, h3 > a:hover, h4 > a:hover, h5 > a:hover, h6 > a:hover {
-  color: #999caa;
+  color: #eeff00;
   text-decoration: none;
 }
 
@@ -208,7 +210,7 @@ h4 {
 
 .accordion [aria-expanded="true"],
 .accordion .collapse.in {
-  color: #fff;
+  color: #ffffff;
   background: #17bed2;
 }
 
@@ -530,7 +532,7 @@ fieldset[disabled] .btn-theme {
   	[Footer]
 ------------------------------------------------------------------*/
 .footer .footer-logo {
-  width: 100px;
+  width: 80px;
   height: auto;
 }
 
@@ -637,9 +639,9 @@ fieldset[disabled] .btn-theme {
 
 /* Navbar Logo */
 .header .logo {
-  width: 150px;
-  height: 150px;
-  float: left;
+  width: 100px;
+  height: 100px;
+  float: inline-end;
   max-height: 95px;
   line-height: 65px;
 }
@@ -1015,7 +1017,7 @@ fieldset[disabled] .btn-theme {
 .carousel-title {
   font-size: 80px;
   font-weight: 700;
-  color: #fff;
+  color: #33ff00;
   line-height: 1.1;
   text-transform: uppercase;
 }
@@ -1067,7 +1069,7 @@ fieldset[disabled] .btn-theme {
 }
 
 .color-heading {
-  color: #515769 !important;
+  color: #ff009d !important;
 }
 
 .color-subtitle {
@@ -1094,27 +1096,27 @@ fieldset[disabled] .btn-theme {
 }
 
 .bg-color-white {
-  background: #fff !important;
+  background: #111111 !important;
 }
 
 .bg-color-heading {
-  background: #515769 !important;
+  background: #2b2b2b !important;
 }
 
 .bg-color-subtitle {
-  background: #a6a7aa !important;
+  background: #3e4763 !important;
 }
 
 .bg-color-link {
-  background: #81848f !important;
+  background: #ff00b3 !important;
 }
 
 .bg-color-link-hover {
-  background: #999caa !important;
+  background: #455fd4 !important;
 }
 
 .bg-color-sky-light {
-  background: #fafafa !important;
+  background: #2e2e30 !important;
 }
 
 /*------------------------------------------------------------------
@@ -1165,23 +1167,23 @@ fieldset[disabled] .btn-theme {
     [Font Weight]
 ----------------------------------------------------*/
 .fweight-300 {
-  font-weight: 300 !important;
+  font-weight: 3000 !important;
 }
 
 .fweight-400 {
-  font-weight: 400 !important;
+  font-weight: 4000 !important;
 }
 
 .fweight-500 {
-  font-weight: 500 !important;
+  font-weight: 5000 !important;
 }
 
 .fweight-600 {
-  font-weight: 600 !important;
+  font-weight: 6000 !important;
 }
 
 .fweight-700 {
-  font-weight: 700 !important;
+  font-weight: 7000 !important;
 }
 
 /*------------------------------------------------------------------
