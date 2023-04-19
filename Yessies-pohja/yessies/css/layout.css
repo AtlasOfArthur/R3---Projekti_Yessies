@@ -188,7 +188,7 @@ h4 {
 }
 
 .accordion .panel-title {
-  font-size: 220px;
+  font-size: 22px;
 }
 
 .accordion .panel-title-child {
@@ -1096,7 +1096,7 @@ fieldset[disabled] .btn-theme {
 }
 
 .bg-color-white {
-  background: #fff !important;
+  background: #111111 !important;
 }
 
 .bg-color-heading {
