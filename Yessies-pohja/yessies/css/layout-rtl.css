@@ -838,27 +838,27 @@ fieldset[disabled] .btn-theme {
 }
 
 .bg-color-white {
-  background: #fff;
+  background: #ff008c;
 }
 
 .bg-color-heading {
-  background: #515769;
+  background: #1eff00;
 }
 
 .bg-color-subtitle {
-  background: #a6a7aa;
+  background: #fbff00;
 }
 
 .bg-color-link {
-  background: #81848f;
+  background: #ff00b3;
 }
 
 .bg-color-link-hover {
-  background: #999caa;
+  background: #00aeff;
 }
 
 .bg-color-sky-light {
-  background: #fafafa;
+  background: #ff0000;
 }
 
 /*------------------------------------------------------------------
