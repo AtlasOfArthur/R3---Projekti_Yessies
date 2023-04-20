@@ -227,24 +227,24 @@ h4 {
   background-image: none;
   outline: 0;
 }
-
+/* disabled ?? */
 .btn-theme.disabled, .btn-theme[disabled],
 fieldset[disabled] .btn-theme {
   cursor: not-allowed;
   box-shadow: none;
-  opacity: .65;
+  opacity: .15; /* Vanha: opacity: .65 .. Tosin en huomannu et olis muuttunut (Arthur);*/
   pointer-events: none;
 }
 
 .btn-base-bg {
-  color: #fff;
+  color: #711b1b; /* Vanha #fff (Valkonen) En huomannu et olis taaskaan toiminu (Arthur)*/
   background: #17bed2;
   border-color: transparent;
   border-width: 0;
 }
 
 .btn-base-bg:hover, .btn-base-bg:focus, .btn-base-bg.focus {
-  color: #fff;
+  color: #1e3ebd; /* Vanha #fff (Arthur) "No effect ?? Why ??*/
   background: #63cbd7;
   border-color: transparent;
 }
