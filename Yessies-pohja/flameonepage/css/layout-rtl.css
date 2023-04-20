@@ -829,6 +829,10 @@ fieldset[disabled] .btn-theme {
 .color-sky-light {
   color: #fafafa;
 }
+/* Uus (Arthur) */
+.color-randomsheet {
+  color: #706005 !important;
+}
 
 /*------------------------------------------------------------------
   	[Background Colors]
