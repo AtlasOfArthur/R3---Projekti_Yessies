@@ -24,7 +24,7 @@
 ------------------------------------------------------------------*/
 
 html {
-  @import url('https://fonts.googleapis.com/css2?family=Sofia+Sans+Extra+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Sofia+Sans+Extra+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sofia+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
   overflow-x: hidden;
 }
 
@@ -39,11 +39,13 @@ body {
 
 p {
   font-size: 15px;
+  text-align: right;
   font-weight: 400;
-  font-family: Hind, sans-serif;
+  font-family: 'Sofia Sans', sans-serif;
   color: #a6a7aa;
   line-height: 1.4;
   margin-bottom: 15px;
+
 }
 
 em,
@@ -85,6 +87,7 @@ a:focus, a:hover, a:active {
   content: " ";
 }
 
+
 span {
   font-size: 14px;
   font-weight: 400;
@@ -93,11 +96,12 @@ span {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-weight: 7000;
-  font-family: Hind, sans-serif;
+  font-weight: 200;
+  font-family: 'Sofia Sans Extra Condensed', sans-serif;
   color: #f800cf;
   line-height: 1.4;
   margin: 0 0 15px;
+
 }
 
 h1 > a, h2 > a, h3 > a, h4 > a, h5 > a, h6 > a {
@@ -107,6 +111,15 @@ h1 > a, h2 > a, h3 > a, h4 > a, h5 > a, h6 > a {
 h1 > a:hover, h2 > a:hover, h3 > a:hover, h4 > a:hover, h5 > a:hover, h6 > a:hover {
   color: #eeff00;
   text-decoration: none;
+}
+.yessies2 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
+  
+
+
 }
 
 h1 > a:focus, h2 > a:focus, h3 > a:focus, h4 > a:focus, h5 > a:focus, h6 > a:focus {
@@ -119,6 +132,7 @@ h1 {
 
 h2 {
   font-size: 30px;
+  letter-spacing: 10px;
 }
 
 h3 {
@@ -560,7 +574,7 @@ fieldset[disabled] .btn-theme {
 /* Navbar */
 .header .navbar {
   margin-bottom: 0;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid rgb(236, 15, 15);
   transition-duration: 300ms;
   transition-property: all;
   transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
