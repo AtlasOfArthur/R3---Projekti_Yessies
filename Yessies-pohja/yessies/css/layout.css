@@ -94,10 +94,11 @@ span {
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: 7000;
-  font-family: Hind, sans-serif;
+  font-family: 'Sofia Sans Extra Condensed', sans-serif;
   color: #f800cf;
   line-height: 1.4;
   margin: 0 0 15px;
+
 }
 
 h1 > a, h2 > a, h3 > a, h4 > a, h5 > a, h6 > a {
@@ -119,6 +120,7 @@ h1 {
 
 h2 {
   font-size: 30px;
+  letter-spacing: 10px;
 }
 
 h3 {
