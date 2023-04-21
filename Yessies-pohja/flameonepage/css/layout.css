@@ -231,6 +231,7 @@ h4 {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  border-radius: 25%;
 }
 
 .btn-theme:focus, .btn-theme:active:focus, .btn-theme.active:focus, .btn-theme.focus, .btn-theme:active.focus, .btn-theme.active.focus {
@@ -275,26 +276,28 @@ fieldset[disabled] .btn-theme {
 
 .btn-white-brd {
   color: #fff;
-  background: transparent;
+  background-color: #706005;  /* Added Ei toimi */
+  opacity: 45%; /* Added ei toimi */
+ /* background: transparent;*/
   border-color: #fff;
   border-width: 2px;
 }
 
 .btn-white-brd:hover, .btn-white-brd:focus, .btn-white-brd.focus {
   color: #515769;
-  background: #fff;
+  background: #c62d2d; /* #fff */
   border-color: #fff;
 }
 
 .btn-default-bg {
   color: #515769;
-  background: #f3f4f5;
+  background: #ffffff;
   border-color: transparent;
   border-width: 0;
 }
 
 .btn-default-bg:hover, .btn-default-bg:focus, .btn-default-bg.focus {
-  color: #fff;
+  color: #ffffff;
   background: #17bed2;
   border-color: transparent;
 }
@@ -1089,6 +1092,7 @@ fieldset[disabled] .btn-theme {
 .color-randomsheet {
   color: #706005 !important;
 }
+/* layout-rtl.css (832) _colors.scss (12) index (107) */
 
 /*------------------------------------------------------------------
   	[Background Colors]
