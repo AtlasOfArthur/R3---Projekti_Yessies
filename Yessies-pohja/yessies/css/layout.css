@@ -641,9 +641,9 @@ fieldset[disabled] .btn-theme {
 
 /* Navbar Logo */
 .header .logo {
-  width: 150px;
-  height: 150px;
-  float: left;
+  width: 100px;
+  height: 100px;
+  float: inline-end;
   max-height: 95px;
   line-height: 65px;
 }
