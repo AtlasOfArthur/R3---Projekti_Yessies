@@ -39,12 +39,13 @@ body {
 
 p {
   font-size: 15px;
+  text-align: left;
   font-weight: 400;
   font-family: 'Sofia Sans', sans-serif;
   color: #a6a7aa;
   line-height: 1.4;
-  margin: auto;
-  /*margin-bottom: 15px;*/
+  margin-bottom: 15px;
+
 }
 
 em,
