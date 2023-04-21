@@ -87,6 +87,7 @@ a:focus, a:hover, a:active {
   content: " ";
 }
 
+
 span {
   font-size: 14px;
   font-weight: 400;
@@ -110,6 +111,15 @@ h1 > a, h2 > a, h3 > a, h4 > a, h5 > a, h6 > a {
 h1 > a:hover, h2 > a:hover, h3 > a:hover, h4 > a:hover, h5 > a:hover, h6 > a:hover {
   color: #eeff00;
   text-decoration: none;
+}
+.yessies2 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
+  
+
+
 }
 
 h1 > a:focus, h2 > a:focus, h3 > a:focus, h4 > a:focus, h5 > a:focus, h6 > a:focus {
