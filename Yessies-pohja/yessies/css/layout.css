@@ -34,31 +34,32 @@ html, html a, body {
 
 body {
   position: relative;
-  font-family: Hind, sans-serif;
+  font-family: 'Sofia Sans Extra Condensed', sans-serif;
 }
 
 p {
-  font-size: 15px;
-  text-align: right;
+  font-size: 22px;
+  text-align: center;
   font-weight: 400;
-  font-family: 'Sofia Sans', sans-serif;
-  color: #a6a7aa;
+  font-family:'Sofia Sans Extra Condensed', sans-serif;
+  color: #c6c9d4;
   line-height: 1.4;
   margin-bottom: 15px;
+  word-spacing: 2px;
 
 }
 
 em,
 li,
 li a {
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 500;
-  font-family: Hind, sans-serif;
+  font-family: 'Sofia Sans Extra Condensed', sans-serif;
   color: #ff00b3;
 }
 
 a {
-  font-family: Hind, sans-serif;
+  font-family: 'Sofia Sans Extra Condensed', sans-serif;
   color: #81848f;
   outline: 0;
 }
@@ -71,9 +72,9 @@ a:focus, a:hover, a:active {
 
 .link {
   position: relative;
-  font-size: 13px;
+  font-size: 20px;
   font-weight: 600;
-  font-family: Hind, sans-serif;
+  font-family: 'Sofia Sans Extra Condensed', sans-serif;
   text-transform: uppercase;
 }
 
@@ -89,16 +90,16 @@ a:focus, a:hover, a:active {
 
 
 span {
-  font-size: 14px;
+  font-size: 20px;
   font-weight: 400;
-  font-family: Hind, sans-serif;
+  font-family: 'Sofia Sans Extra Condensed', sans-serif;
   color: #002db4;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: 200;
   font-family: 'Sofia Sans Extra Condensed', sans-serif;
-  color: #f800cf;
+  color: #f86ae0;
   line-height: 1.4;
   margin: 0 0 15px;
 
@@ -112,14 +113,11 @@ h1 > a:hover, h2 > a:hover, h3 > a:hover, h4 > a:hover, h5 > a:hover, h6 > a:hov
   color: #eeff00;
   text-decoration: none;
 }
-.yessies2 {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 75%;
+.yessies2 { /* Pinjan taistelukenttä logon/kuvan kanssa. I am not winning */
+  text-align: right;
+  height: fit-content;
+  width: fit-content;
   
-
-
 }
 
 h1 > a:focus, h2 > a:focus, h3 > a:focus, h4 > a:focus, h5 > a:focus, h6 > a:focus {
@@ -131,16 +129,33 @@ h1 {
 }
 
 h2 {
-  font-size: 30px;
+  font-size: 40px;
   letter-spacing: 10px;
+  text-align: center;
 }
 
 h3 {
-  font-size: 22px;
+  font-size: 25px;
 }
 
-h4 {
-  font-size: 22px;
+
+h4 { /* tästä kohdasta saa muokattua ota yhteyttä-osiota */
+  font-size: 40px;
+  text-align: center;
+}
+.contact { /* tää ei tällä hetkellä tee mitään :( */
+  background-color: #2e2e30;
+}
+form { /*tein uuden rulesetin lomaketta varten, ei muuta kun säätämään */
+  font-size: 20px;
+  text-align: start;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: auto;
+  margin-top: auto;
+}
+input { /*tämäkään ei kai tee mitään as of now */
+  box-sizing: content-box;
 }
 
 ::selection {
@@ -316,7 +331,7 @@ fieldset[disabled] .btn-theme {
 }
 
 .btn-theme-sm {
-  font-size: 13px;
+  font-size: 20px;
   font-weight: 600;
   padding: 15px 40px;
 }
@@ -574,7 +589,7 @@ fieldset[disabled] .btn-theme {
 /* Navbar */
 .header .navbar {
   margin-bottom: 0;
-  border-bottom: 1px solid rgb(236, 15, 15);
+  border-bottom: 1px solid rgb(140, 236, 15);
   transition-duration: 300ms;
   transition-property: all;
   transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
@@ -648,7 +663,7 @@ fieldset[disabled] .btn-theme {
 }
 
 .header .navbar-toggle:hover .toggle-icon.is-clicked {
-  background: rgba(81, 87, 105, 0);
+  background: rgb(69, 70, 73);
 }
 
 /* Navbar Logo */
@@ -661,8 +676,8 @@ fieldset[disabled] .btn-theme {
 }
 
 .header .logo-wrap {
-  display: inline-block;
-  padding: 15px 0;
+  display: block;
+  padding: 0px;
 }
 
 .header .logo-wrap:focus, .header .logo-wrap:hover {
@@ -670,12 +685,12 @@ fieldset[disabled] .btn-theme {
 }
 
 .header .logo-img {
-  display: inline-block;
+  display: block;
   width: 146px;
   height: auto;
   max-width: 100%;
   max-height: 100%;
-  vertical-align: middle;
+  align-items: end;
 }
 
 .header .logo-img-main {
@@ -726,9 +741,9 @@ fieldset[disabled] .btn-theme {
 .header .nav-item-child {
   position: relative;
   display: block;
-  font-size: 13px;
+  font-size: 25px;
   font-weight: 600;
-  font-family: Hind, sans-serif;
+  font-family: 'Sofia Sans Extra Condensed', sans-serif;
   color: #fff;
   text-transform: uppercase;
   line-height: 55px;
@@ -879,7 +894,7 @@ fieldset[disabled] .btn-theme {
   	[Contact]
 ------------------------------------------------------------------*/
 .contact-list > li {
-  font-size: 13px;
+  font-size: 20px;
   color: #81848f;
   margin-bottom: 10px;
 }
@@ -962,7 +977,7 @@ fieldset[disabled] .btn-theme {
 ------------------------------------------------------------------*/
 .form-control {
   height: 50px;
-  font-size: 14px;
+  font-size: 15px;
   font-weight: 400;
   color: #a6a7aa;
   background: #fafafa;
@@ -1165,8 +1180,8 @@ fieldset[disabled] .btn-theme {
 }
 
 .content-lg {
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 /*------------------------------------------------------------------
@@ -1266,7 +1281,7 @@ fieldset[disabled] .btn-theme {
 }
 
 .margin-t-50 {
-  margin-top: 50px !important;
+  margin-top: 30px !important;
 }
 
 .margin-t-60 {
