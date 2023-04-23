@@ -403,18 +403,20 @@
             <!-- Yhteydenotto lomake alkaa -->
             <form>
                 <lable> Etunimi:</lable>
-                <input type="text" placeholder="Etunimi" required />
+                <input type="text" placeholder="Etunimi" id="etunimi" required />
 
                 <lable> Sukunimi:</lable>
                 <input type="text" placeholder="Sukunimi" required />
-
+            
                 <div>
+                    <br />
                     <lable> Sähköposti</lable>
                     <input type="email" placeholder="Sähköposti" required />
                 </div>
-                <textarea placeholder="Viesti" required> </textarea>
-                <input type="file">
-                <input type="submit" />
+                <br/>
+                <textarea id="viesti" placeholder="Viesti" rows="7" cols="50" required></textarea>
+                <input id="form-button" type="file">
+                <input id="form-button" type="submit" />
             </form>
             <!-- Google Map // Kartta piiloon
             <div class="map height-300">

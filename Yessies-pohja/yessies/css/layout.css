@@ -140,20 +140,32 @@ h3 {
 
 
 h4 { /* tästä kohdasta saa muokattua ota yhteyttä-osiota */
-  font-size: 40px;
+  font-size: 60px;
   text-align: center;
 }
 .contact { /* tää ei tällä hetkellä tee mitään :( */
   background-color: #2e2e30;
 }
-form { /*tein uuden rulesetin lomaketta varten, ei muuta kun säätämään */
-  font-size: 20px;
-  text-align: start;
+form { /*tein uuden rulesetin lomaketta varten, ei muuta kun säätämään /kiitos :) t.Renja*/
+  font-size: 25px;
+  text-align: center;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: auto;
   margin-top: auto;
 }
+
+#etunimi { border-radius: 25px; /* lomakkeeseen pyöreät kulmat*/
+      border:1px solid;
+      padding:10px;
+      width:100px;
+      height: 6px;
+}
+
+#form-button { 
+    text-align: center;
+}
+
 input { /*tämäkään ei kai tee mitään as of now */
   box-sizing: content-box;
 }
