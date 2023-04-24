@@ -1,3 +1,5 @@
 # R3---Projekti_Yessies
-Koulu (Tiimi) projekti, kotisivun luonti graafisena suunnittelijana työskentelevälle asiakkaalle.
-Useampi versio (V1, 2 & 3) luotu valmiiksi pohjiksi, joita voidaan tarpeen mukaan muokata asiakkaan vaatimusten perusteella.
+Koulu (Tiimi) projekti, kotisivun luonti mainostoimisto asiakkaalle.
+Tarkoitus on luoda layout-suunnitelmaa mahdollisimman hyvin mukaileva nettisivu asiakkaan toiveiden mukaan.
+Haasteita on matkalle tullut mm. SCSS:n muodossa, sillä kukaan tiimin jäsen ei tiedä entuudestaan SCSS:tä mitään. Olemme siis yhdessä perehtyneet asioihin.
+Projektin wiki sisältää syvemmän kuvauksen.
