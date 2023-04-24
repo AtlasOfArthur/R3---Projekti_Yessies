@@ -35,6 +35,7 @@ html, html a, body {
 body {
   position: relative;
   font-family: 'Sofia Sans Extra Condensed', sans-serif;
+  background-color: #2e2e30;
 }
 
 p {
@@ -195,7 +196,7 @@ input { /*tämäkään ei kai tee mitään as of now */
 
 /* Section Seperator */
 .section-seperator {
-  border-bottom: 1px solid #edf0f2;
+  border-bottom: 1px solid #0663a1;
 }
 
 /* Content Wrapper Link */
@@ -405,7 +406,7 @@ fieldset[disabled] .btn-theme {
   	[Service]
 ------------------------------------------------------------------*/
 .service {
-  background: #fff;
+  background: #272626;
   padding: 50px;
 }
 
@@ -422,7 +423,7 @@ fieldset[disabled] .btn-theme {
 .service .service-icon {
   display: block;
   font-size: 30px;
-  color: #999caa;
+  color: #17181a;
   margin-bottom: 30px;
 }
 
@@ -452,10 +453,14 @@ fieldset[disabled] .btn-theme {
 .work {
   position: relative;
   display: block;
+  margin-bottom: auto;
+  margin-top: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .work .work-overlay {
-  position: relative;
+  position: static;
   cursor: pointer;
 }
 
@@ -473,8 +478,11 @@ fieldset[disabled] .btn-theme {
 }
 
 .work:hover .work-overlay:before {
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(58, 53, 53, 0.5);
   transition-duration: 300ms;
+  content: "LISÄÄ...";
+  text-align: right;
+  font-size: 30px;
   transition-property: all;
   transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
 }
@@ -493,7 +501,7 @@ fieldset[disabled] .btn-theme {
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   overflow-x: hidden;
-  background: rgba(81, 87, 105, 0.4);
+  background: rgba(112, 222, 9, 0.267);
   transition-duration: 300ms;
   transition-property: all;
   transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
@@ -541,16 +549,16 @@ fieldset[disabled] .btn-theme {
 
 .work .work-popup-close {
   float: right;
-  font-size: 13px;
+  font-size: 25px;
   font-weight: 700;
-  color: #c5c6cb;
+  color: #d61bc0;
   transition-duration: 300ms;
   transition-property: all;
   transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
 }
 
 .work .work-popup-close:hover {
-  color: #aaacb3;
+  color: #d61bc0;
   transition-duration: 300ms;
   transition-property: all;
   transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
@@ -667,7 +675,7 @@ fieldset[disabled] .btn-theme {
 
 .header .navbar-toggle:hover .toggle-icon:before, .header .navbar-toggle:hover .toggle-icon:after {
   width: 21px;
-  height: 1px;
+  height: 21px;
   background: #17bed2;
   transition-duration: 300ms;
   transition-property: all;
@@ -756,7 +764,7 @@ fieldset[disabled] .btn-theme {
   font-size: 25px;
   font-weight: 600;
   font-family: 'Sofia Sans Extra Condensed', sans-serif;
-  color: #fff;
+  color: #1bdbfd;
   text-transform: uppercase;
   line-height: 55px;
   padding: 20px;
@@ -766,7 +774,7 @@ fieldset[disabled] .btn-theme {
 }
 
 .header .nav-item-child:hover, .header .nav-item-child:focus {
-  background: transparent;
+  background: #4ed4f24d;
 }
 
 .header .nav-item-hover {
@@ -876,7 +884,7 @@ fieldset[disabled] .btn-theme {
 /* Page On Scroll */
 @media (min-width: 992px) {
   .page-on-scroll .header .navbar {
-    background: #fff;
+    background: #2e2e30;
     border-bottom-color: #f0f0f0;
     transition-duration: 300ms;
     transition-property: all;
@@ -895,7 +903,7 @@ fieldset[disabled] .btn-theme {
     transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
   }
   .page-on-scroll .header .nav-item-child {
-    color: #515769;
+    color: #878ea5;
     transition-duration: 300ms;
     transition-property: all;
     transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
@@ -1189,6 +1197,7 @@ fieldset[disabled] .btn-theme {
 .content-md {
   padding-top: 80px;
   padding-bottom: 80px;
+  background-color: #2e2e30;
 }
 
 .content-lg {
