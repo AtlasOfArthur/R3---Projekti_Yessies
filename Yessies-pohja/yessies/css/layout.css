@@ -166,11 +166,12 @@ form { /*tein uuden rulesetin lomaketta varten, ei muuta kun säätämään /kii
       height: 6px;
 }
 
-#form-button { /*valitse tiedosto nappi*/
+::file-selector-button { /*valitse tiedosto nappi*/
     text-align: center;
-    color: white;
+    color: black;
+    border: thin solid white;
+    border-radius: 3px;
 }
-
 #submit-button { /* lähetä nappi*/
     text-align: center;
     color:black;
