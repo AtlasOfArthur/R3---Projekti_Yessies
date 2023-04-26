@@ -166,6 +166,11 @@ form { /*tein uuden rulesetin lomaketta varten, ei muuta kun säätämään /kii
       height: 6px;
 }
 
+#email {
+    text-align: center;
+    vertical-align: central;
+}
+
 ::file-selector-button { /*valitse tiedosto nappi*/
     text-align: center;
     color: black;
