@@ -143,8 +143,9 @@ h3 {
 
 
 h4 { /* tästä kohdasta saa muokattua ota yhteyttä-osiota */
-  font-size: 60px;
-  text-align: center;
+    font-size: 60px;
+    text-align: center;
+    color: #12B1C1;
 }
 .contact { /* tää ei tällä hetkellä tee mitään :( */
   background-color: #2e2e30;
@@ -156,6 +157,7 @@ form { /*tein uuden rulesetin lomaketta varten, ei muuta kun säätämään /kii
   margin-right: auto;
   margin-bottom: auto;
   margin-top: auto;
+  color:white;
 }
 
 #etunimi { border-radius: 25px; /* lomakkeeseen pyöreät kulmat*/
@@ -165,8 +167,14 @@ form { /*tein uuden rulesetin lomaketta varten, ei muuta kun säätämään /kii
       height: 6px;
 }
 
-#form-button { 
+#form-button { /*valitse tiedosto nappi*/
     text-align: center;
+    color: white;
+}
+
+#submit-button { /* lähetä nappi*/
+    text-align: center;
+    color:black;
 }
 
 input { /*tämäkään ei kai tee mitään as of now */
