@@ -22,7 +22,9 @@
   	[The "base.scss" contains basic default element styles
   		(colors, typography, margins & padding).]
 ------------------------------------------------------------------*/
+
 html {
+  @import url('https://fonts.googleapis.com/css2?family=Sofia+Sans+Extra+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sofia+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
   overflow-x: hidden;
 }
 
@@ -32,29 +34,33 @@ html, html a, body {
 
 body {
   position: relative;
-  font-family: Hind, sans-serif;
+  font-family: 'Sofia Sans Extra Condensed', sans-serif;
+  background-color: #2e2e30;
 }
 
 p {
-  font-size: 15px;
+  font-size: 22px;
+  text-align: center;
   font-weight: 400;
-  font-family: Hind, sans-serif;
-  color: #a6a7aa;
+  font-family:'Sofia Sans Extra Condensed', sans-serif;
+  color: #c6c9d4;
   line-height: 1.4;
   margin-bottom: 15px;
+  word-spacing: 2px;
+
 }
 
 em,
 li,
 li a {
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 500;
-  font-family: Hind, sans-serif;
-  color: #515769;
+  font-family: 'Sofia Sans Extra Condensed', sans-serif;
+  color: #ff00b3;
 }
 
 a {
-  font-family: Hind, sans-serif;
+  font-family: 'Sofia Sans Extra Condensed', sans-serif;
   color: #81848f;
   outline: 0;
 }
@@ -67,9 +73,9 @@ a:focus, a:hover, a:active {
 
 .link {
   position: relative;
-  font-size: 13px;
+  font-size: 20px;
   font-weight: 600;
-  font-family: Hind, sans-serif;
+  font-family: 'Sofia Sans Extra Condensed', sans-serif;
   text-transform: uppercase;
 }
 
@@ -83,28 +89,36 @@ a:focus, a:hover, a:active {
   content: " ";
 }
 
+
 span {
-  font-size: 14px;
+  font-size: 20px;
   font-weight: 400;
-  font-family: Hind, sans-serif;
-  color: #bfc1c7;
+  font-family: 'Sofia Sans Extra Condensed', sans-serif;
+  color: #002db4;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-weight: 700;
-  font-family: Hind, sans-serif;
-  color: #515769;
+  font-weight: 200;
+  font-family: 'Sofia Sans Extra Condensed', sans-serif;
+  color: #f86ae0;
   line-height: 1.4;
   margin: 0 0 15px;
+
 }
 
 h1 > a, h2 > a, h3 > a, h4 > a, h5 > a, h6 > a {
-  color: #515769;
+  color: #00ff00;
 }
 
 h1 > a:hover, h2 > a:hover, h3 > a:hover, h4 > a:hover, h5 > a:hover, h6 > a:hover {
-  color: #999caa;
+  color: #eeff00;
   text-decoration: none;
+}
+.yessies2 { /* Pinjan taistelukenttä logon/kuvan kanssa. I am not winning */
+  text-align: right;
+  height: fit-content;
+  width: fit-content;
+  
 }
 
 h1 > a:focus, h2 > a:focus, h3 > a:focus, h4 > a:focus, h5 > a:focus, h6 > a:focus {
@@ -116,15 +130,45 @@ h1 {
 }
 
 h2 {
-  font-size: 30px;
+  font-size: 40px;
+  letter-spacing: 10px;
+  text-align: center;
 }
 
 h3 {
-  font-size: 22px;
+  font-size: 25px;
 }
 
-h4 {
-  font-size: 22px;
+
+h4 { /* tästä kohdasta saa muokattua ota yhteyttä-osiota */
+  font-size: 60px;
+  text-align: center;
+}
+.contact { /* tää ei tällä hetkellä tee mitään :( */
+  background-color: #2e2e30;
+}
+form { /*tein uuden rulesetin lomaketta varten, ei muuta kun säätämään /kiitos :) t.Renja*/
+  font-size: 25px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: auto;
+  margin-top: auto;
+}
+
+#etunimi { border-radius: 25px; /* lomakkeeseen pyöreät kulmat*/
+      border:1px solid;
+      padding:10px;
+      width:100px;
+      height: 6px;
+}
+
+#form-button { 
+    text-align: center;
+}
+
+input { /*tämäkään ei kai tee mitään as of now */
+  box-sizing: content-box;
 }
 
 ::selection {
@@ -152,7 +196,7 @@ h4 {
 
 /* Section Seperator */
 .section-seperator {
-  border-bottom: 1px solid #edf0f2;
+  border-bottom: 1px solid #0663a1;
 }
 
 /* Content Wrapper Link */
@@ -208,7 +252,7 @@ h4 {
 
 .accordion [aria-expanded="true"],
 .accordion .collapse.in {
-  color: #fff;
+  color: #ffffff;
   background: #17bed2;
 }
 
@@ -231,7 +275,6 @@ h4 {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  border-radius: 25%;
 }
 
 .btn-theme:focus, .btn-theme:active:focus, .btn-theme.active:focus, .btn-theme.focus, .btn-theme:active.focus, .btn-theme.active.focus {
@@ -276,34 +319,32 @@ fieldset[disabled] .btn-theme {
 
 .btn-white-brd {
   color: #fff;
-  background-color: #706005;  /* Added Ei toimi */
-  opacity: 45%; /* Added ei toimi */
- /* background: transparent;*/
+  background: transparent;
   border-color: #fff;
   border-width: 2px;
 }
 
 .btn-white-brd:hover, .btn-white-brd:focus, .btn-white-brd.focus {
   color: #515769;
-  background: #c62d2d; /* #fff */
+  background: #fff;
   border-color: #fff;
 }
 
 .btn-default-bg {
   color: #515769;
-  background: #ffffff;
+  background: #f3f4f5;
   border-color: transparent;
   border-width: 0;
 }
 
 .btn-default-bg:hover, .btn-default-bg:focus, .btn-default-bg.focus {
-  color: #ffffff;
+  color: #fff;
   background: #17bed2;
   border-color: transparent;
 }
 
 .btn-theme-sm {
-  font-size: 13px;
+  font-size: 20px;
   font-weight: 600;
   padding: 15px 40px;
 }
@@ -365,7 +406,7 @@ fieldset[disabled] .btn-theme {
   	[Service]
 ------------------------------------------------------------------*/
 .service {
-  background: #fff;
+  background: #272626;
   padding: 50px;
 }
 
@@ -382,7 +423,7 @@ fieldset[disabled] .btn-theme {
 .service .service-icon {
   display: block;
   font-size: 30px;
-  color: #999caa;
+  color: #17181a;
   margin-bottom: 30px;
 }
 
@@ -412,10 +453,14 @@ fieldset[disabled] .btn-theme {
 .work {
   position: relative;
   display: block;
+  margin-bottom: auto;
+  margin-top: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .work .work-overlay {
-  position: relative;
+  position: static;
   cursor: pointer;
 }
 
@@ -433,8 +478,11 @@ fieldset[disabled] .btn-theme {
 }
 
 .work:hover .work-overlay:before {
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(58, 53, 53, 0.5);
   transition-duration: 300ms;
+  content: "LISÄÄ...";
+  text-align: right;
+  font-size: 30px;
   transition-property: all;
   transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
 }
@@ -453,7 +501,7 @@ fieldset[disabled] .btn-theme {
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   overflow-x: hidden;
-  background: rgba(81, 87, 105, 0.4);
+  background: rgba(112, 222, 9, 0.267);
   transition-duration: 300ms;
   transition-property: all;
   transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
@@ -501,16 +549,16 @@ fieldset[disabled] .btn-theme {
 
 .work .work-popup-close {
   float: right;
-  font-size: 13px;
+  font-size: 25px;
   font-weight: 700;
-  color: #c5c6cb;
+  color: #d61bc0;
   transition-duration: 300ms;
   transition-property: all;
   transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
 }
 
 .work .work-popup-close:hover {
-  color: #aaacb3;
+  color: #d61bc0;
   transition-duration: 300ms;
   transition-property: all;
   transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
@@ -533,7 +581,7 @@ fieldset[disabled] .btn-theme {
   	[Footer]
 ------------------------------------------------------------------*/
 .footer .footer-logo {
-  width: 100px;
+  width: 80px;
   height: auto;
 }
 
@@ -561,7 +609,7 @@ fieldset[disabled] .btn-theme {
 /* Navbar */
 .header .navbar {
   margin-bottom: 0;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid rgb(140, 236, 15);
   transition-duration: 300ms;
   transition-property: all;
   transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
@@ -627,7 +675,7 @@ fieldset[disabled] .btn-theme {
 
 .header .navbar-toggle:hover .toggle-icon:before, .header .navbar-toggle:hover .toggle-icon:after {
   width: 21px;
-  height: 1px;
+  height: 21px;
   background: #17bed2;
   transition-duration: 300ms;
   transition-property: all;
@@ -635,21 +683,21 @@ fieldset[disabled] .btn-theme {
 }
 
 .header .navbar-toggle:hover .toggle-icon.is-clicked {
-  background: rgba(81, 87, 105, 0);
+  background: rgb(69, 70, 73);
 }
 
 /* Navbar Logo */
 .header .logo {
-  width: 150px;
-  height: 150px;
-  float: left;
+  width: 100px;
+  height: 100px;
+  float: inline-end;
   max-height: 95px;
   line-height: 65px;
 }
 
 .header .logo-wrap {
-  display: inline-block;
-  padding: 15px 0;
+  display: block;
+  padding: 0px;
 }
 
 .header .logo-wrap:focus, .header .logo-wrap:hover {
@@ -657,12 +705,12 @@ fieldset[disabled] .btn-theme {
 }
 
 .header .logo-img {
-  display: inline-block;
+  display: block;
   width: 146px;
   height: auto;
   max-width: 100%;
   max-height: 100%;
-  vertical-align: middle;
+  align-items: end;
 }
 
 .header .logo-img-main {
@@ -713,10 +761,10 @@ fieldset[disabled] .btn-theme {
 .header .nav-item-child {
   position: relative;
   display: block;
-  font-size: 13px;
+  font-size: 25px;
   font-weight: 600;
-  font-family: Hind, sans-serif;
-  color: #fff;
+  font-family: 'Sofia Sans Extra Condensed', sans-serif;
+  color: #1bdbfd;
   text-transform: uppercase;
   line-height: 55px;
   padding: 20px;
@@ -726,7 +774,7 @@ fieldset[disabled] .btn-theme {
 }
 
 .header .nav-item-child:hover, .header .nav-item-child:focus {
-  background: transparent;
+  background: #4ed4f24d;
 }
 
 .header .nav-item-hover {
@@ -836,7 +884,7 @@ fieldset[disabled] .btn-theme {
 /* Page On Scroll */
 @media (min-width: 992px) {
   .page-on-scroll .header .navbar {
-    background: #fff;
+    background: #2e2e30;
     border-bottom-color: #f0f0f0;
     transition-duration: 300ms;
     transition-property: all;
@@ -855,7 +903,7 @@ fieldset[disabled] .btn-theme {
     transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
   }
   .page-on-scroll .header .nav-item-child {
-    color: #515769;
+    color: #878ea5;
     transition-duration: 300ms;
     transition-property: all;
     transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
@@ -866,7 +914,7 @@ fieldset[disabled] .btn-theme {
   	[Contact]
 ------------------------------------------------------------------*/
 .contact-list > li {
-  font-size: 13px;
+  font-size: 20px;
   color: #81848f;
   margin-bottom: 10px;
 }
@@ -949,7 +997,7 @@ fieldset[disabled] .btn-theme {
 ------------------------------------------------------------------*/
 .form-control {
   height: 50px;
-  font-size: 14px;
+  font-size: 15px;
   font-weight: 400;
   color: #a6a7aa;
   background: #fafafa;
@@ -1018,7 +1066,7 @@ fieldset[disabled] .btn-theme {
 .carousel-title {
   font-size: 80px;
   font-weight: 700;
-  color: #fff;
+  color: #33ff00;
   line-height: 1.1;
   text-transform: uppercase;
 }
@@ -1070,7 +1118,7 @@ fieldset[disabled] .btn-theme {
 }
 
 .color-heading {
-  color: #515769 !important;
+  color: #ff009d !important;
 }
 
 .color-subtitle {
@@ -1088,11 +1136,6 @@ fieldset[disabled] .btn-theme {
 .color-sky-light {
   color: #fafafa !important;
 }
-/* Uus (Arthur)  Ei toimi! MIKS!?!?*/
-.color-randomsheet {
-  color: #706005 !important;
-}
-/* layout-rtl.css (832) _colors.scss (12) index (107) */
 
 /*------------------------------------------------------------------
   	[Background Colors]
@@ -1102,27 +1145,27 @@ fieldset[disabled] .btn-theme {
 }
 
 .bg-color-white {
-  background: #fff !important;
+  background: #111111 !important;
 }
 
 .bg-color-heading {
-  background: #515769 !important;
+  background: #2b2b2b !important;
 }
 
 .bg-color-subtitle {
-  background: #a6a7aa !important;
+  background: #3e4763 !important;
 }
 
 .bg-color-link {
-  background: #81848f !important;
+  background: #ff00b3 !important;
 }
 
 .bg-color-link-hover {
-  background: #999caa !important;
+  background: #455fd4 !important;
 }
 
 .bg-color-sky-light {
-  background: #fafafa !important;
+  background: #2e2e30 !important;
 }
 
 /*------------------------------------------------------------------
@@ -1154,11 +1197,12 @@ fieldset[disabled] .btn-theme {
 .content-md {
   padding-top: 80px;
   padding-bottom: 80px;
+  background-color: #2e2e30;
 }
 
 .content-lg {
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 /*------------------------------------------------------------------
@@ -1173,23 +1217,23 @@ fieldset[disabled] .btn-theme {
     [Font Weight]
 ----------------------------------------------------*/
 .fweight-300 {
-  font-weight: 300 !important;
+  font-weight: 3000 !important;
 }
 
 .fweight-400 {
-  font-weight: 400 !important;
+  font-weight: 4000 !important;
 }
 
 .fweight-500 {
-  font-weight: 500 !important;
+  font-weight: 5000 !important;
 }
 
 .fweight-600 {
-  font-weight: 600 !important;
+  font-weight: 6000 !important;
 }
 
 .fweight-700 {
-  font-weight: 700 !important;
+  font-weight: 7000 !important;
 }
 
 /*------------------------------------------------------------------
@@ -1258,7 +1302,7 @@ fieldset[disabled] .btn-theme {
 }
 
 .margin-t-50 {
-  margin-top: 50px !important;
+  margin-top: 30px !important;
 }
 
 .margin-t-60 {
