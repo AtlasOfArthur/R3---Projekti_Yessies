@@ -152,7 +152,7 @@ h4 {
 
 /* Section Seperator */
 .section-seperator {
-  border-bottom: 1px solid #edf0f2;
+  border-bottom: 100px solid #8d8d8d;
 }
 
 /* Content Wrapper Link */
@@ -180,7 +180,7 @@ h4 {
 
 .accordion .panel-default > .panel-heading {
   color: #515769;
-  background: #fff;
+  background: #ff0000;
   border: none;
   padding: 0;
 }
@@ -281,6 +281,7 @@ fieldset[disabled] .btn-theme {
  /* background: transparent;*/
   border-color: #fff;
   border-width: 2px;
+  z-index: 0;
 }
 
 .btn-white-brd:hover, .btn-white-brd:focus, .btn-white-brd.focus {
@@ -297,7 +298,7 @@ fieldset[disabled] .btn-theme {
 }
 
 .btn-default-bg:hover, .btn-default-bg:focus, .btn-default-bg.focus {
-  color: #ffffff;
+  color: #fff200;
   background: #17bed2;
   border-color: transparent;
 }
@@ -716,7 +717,7 @@ fieldset[disabled] .btn-theme {
   font-size: 13px;
   font-weight: 600;
   font-family: Hind, sans-serif;
-  color: #fff;
+  color: #ffd013;
   text-transform: uppercase;
   line-height: 55px;
   padding: 20px;
@@ -752,7 +753,7 @@ fieldset[disabled] .btn-theme {
   /* Bootstrap collapse of navigation with a maximum width: 991px
     (Change it to any breakpoint you want to be collapsed) */
   .header {
-    background: #fff;
+    background: #e40808;
   }
   .header .navbar-toggle {
     display: block;
@@ -836,7 +837,7 @@ fieldset[disabled] .btn-theme {
 /* Page On Scroll */
 @media (min-width: 992px) {
   .page-on-scroll .header .navbar {
-    background: #fff;
+    background: #ff0000;
     border-bottom-color: #f0f0f0;
     transition-duration: 300ms;
     transition-property: all;
@@ -884,7 +885,7 @@ fieldset[disabled] .btn-theme {
   height: 40px;
   font-size: 11px;
   font-weight: 400;
-  color: #fff;
+  color: #11ff00;
   text-align: center;
   line-height: 3;
   letter-spacing: 1px;
