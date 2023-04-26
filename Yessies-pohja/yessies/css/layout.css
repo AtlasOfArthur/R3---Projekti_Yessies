@@ -23,7 +23,7 @@
   		(colors, typography, margins & padding).]
 ------------------------------------------------------------------*/
 
-html {
+html { /* tänne importattiin mm. fonttiperhe ja CSS */
   @import url('https://fonts.googleapis.com/css2?family=Sofia+Sans+Extra+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sofia+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
   overflow-x: hidden;
 }
@@ -32,18 +32,18 @@ html, html a, body {
   -webkit-font-smoothing: antialiased;
 }
 
-body {
+body { /* sivun taustan säädöt */
   position: relative;
   font-family: 'Sofia Sans Extra Condensed', sans-serif;
   background-color: #2e2e30;
 }
 
-p {
+p { /* sivun tekstien säädöt, mm. about me-osion esittely */
   font-size: 22px;
   text-align: right;
   font-weight: 400;
   font-family:'Sofia Sans Extra Condensed', sans-serif;
-  color: #c6c9d4;
+  color: #a5a7ad;
   line-height: 1.4;
   margin-bottom: 15px;
   word-spacing: 2px;
@@ -52,14 +52,14 @@ p {
 
 em,
 li,
-li a {
+li a { /* tässä on yhteydenottolomakkeen alapuolella sijaitsevien tekstien asetuksia */
   font-size: 20px;
-  font-weight: 500;
+  font-weight: 400;
   font-family: 'Sofia Sans Extra Condensed', sans-serif;
-  color: #ff5100;
+  color: #12b1c1;
 }
 
-a {
+a { /* anchor-säätöjä. Ei käytössä tällä hetkellä? */
   font-family: 'Sofia Sans Extra Condensed', sans-serif;
   color: #81848f;
   outline: 0;
@@ -113,11 +113,12 @@ h1 > a:hover, h2 > a:hover, h3 > a:hover, h4 > a:hover, h5 > a:hover, h6 > a:hov
   color: #eeff00;
   text-decoration: none;
 }
-.yessies2 { /* Pinjan taistelukenttä logon/kuvan kanssa. I am not winning */
+.yessies2 { /* Pinjan taistelukenttä logon/kuvan kanssa. Säätöä säätöä */
  float: right;
-  width: 50%;
-  padding-right: 200px;
-  padding-top: 100px;
+  display: block;
+  width: 30%;
+  padding-right: 60px;
+  padding-top: 10px;
   
   
 }
@@ -130,7 +131,7 @@ h1 {
   font-size: 40px;
 }
 
-h2 {
+h2 { /* about me- otsikko on tässä */
   font-size: 40px;
   letter-spacing: 15px;
   text-align: center;
@@ -785,7 +786,7 @@ fieldset[disabled] .btn-theme {
 }
 
 .header .nav-item-child:hover, .header .nav-item-child:focus {
-  background: #4ed4f24d;
+  background: #4ed4f233;
 }
 
 .header .nav-item-hover {
@@ -895,8 +896,8 @@ fieldset[disabled] .btn-theme {
 /* Page On Scroll */
 @media (min-width: 992px) {
   .page-on-scroll .header .navbar {
-    background: #2e2e30;
-    border-bottom-color: #f0f0f0;
+    background: #2e2e30e5;
+    border-bottom-color: #8d8d8db9;
     transition-duration: 300ms;
     transition-property: all;
     transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
@@ -914,7 +915,7 @@ fieldset[disabled] .btn-theme {
     transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
   }
   .page-on-scroll .header .nav-item-child {
-    color: #878ea5;
+    color: #12b1c1;
     transition-duration: 300ms;
     transition-property: all;
     transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
@@ -1212,8 +1213,8 @@ fieldset[disabled] .btn-theme {
 }
 
 .content-lg {
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 40px;
+  padding-bottom: 100px;
 }
 
 /*------------------------------------------------------------------
