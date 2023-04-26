@@ -203,9 +203,9 @@ input { /*tämäkään ei kai tee mitään as of now */
   outline: none;
 }
 
-/* Section Seperator */
+/* Section Seperator, tulee näkyviin osioiden välissä pienenä viivana */
 .section-seperator {
-  border-bottom: 1px solid #0663a1;
+  border-bottom: 1px solid #8d8d8d79;
 }
 
 /* Content Wrapper Link */
@@ -612,14 +612,14 @@ fieldset[disabled] .btn-theme {
 ------------------------------------------------------------------*/
 /* Fixed Top */
 .navbar-fixed-top .navbar-collapse {
-  max-height: 100%;
+  display: block;
 }
 
 /* Navbar */
 .header .navbar { /* header navbar vaihtaa backgroundin värin tästä */
   margin-bottom: 0px;
-  background-color: #2b2b2b;
-  border-bottom: 0px solid rgb(140, 236, 15);
+  background-color: #2b2b2be1;
+  border-bottom: 1px solid #8d8d8d;
   transition-duration: 300ms;
   transition-property: all;
   transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
@@ -631,7 +631,7 @@ fieldset[disabled] .btn-theme {
   height: 25px;
   border: none;
   padding: 0;
-  margin: 35px 0;
+  margin: 10px 0;
 }
 
 .header .navbar-toggle .toggle-icon {
@@ -639,7 +639,7 @@ fieldset[disabled] .btn-theme {
   width: 21px;
   height: 1px;
   display: inline-block;
-  background: #515769;
+  background: #275bf8;
   transition-duration: 300ms;
   transition-property: all;
   transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
@@ -693,7 +693,7 @@ fieldset[disabled] .btn-theme {
 }
 
 .header .navbar-toggle:hover .toggle-icon.is-clicked {
-  background: rgb(69, 70, 73);
+  background: rgba(81, 82, 79, 0.493);
 }
 
 /* Navbar Logo */
@@ -701,7 +701,7 @@ fieldset[disabled] .btn-theme {
   width: 100px;
   height: 100px;
   float: inline-end;
-  max-height: 95px;
+  max-height: 100%;
   line-height: 65px;
 }
 
@@ -716,11 +716,12 @@ fieldset[disabled] .btn-theme {
 
 .header .logo-img {
   display: block;
-  width: 146px;
+  padding-top: 60px;
+  margin-left: 60px;
+  width: 100%;
   height: auto;
   max-width: 100%;
   max-height: 100%;
-  align-items: end;
 }
 
 .header .logo-img-main {
@@ -739,8 +740,8 @@ fieldset[disabled] .btn-theme {
 
 /* Navbar */
 .header .navbar-nav {
-  padding-left: 0;
-  margin-bottom: 0;
+  padding-left: auto;
+  margin-bottom: 20px;
   list-style: none;
 }
 
@@ -816,21 +817,21 @@ fieldset[disabled] .btn-theme {
     display: block;
   }
   .header .navbar-collapse.collapse {
-    display: none !important;
+    display: block !important;
   }
   .header .navbar-collapse.collapse.in {
     display: block !important;
   }
   .header .nav-collapse {
-    padding-left: 0;
-    padding-right: 0;
+    padding-left: 0px;
+    padding-right: 0px;
   }
   .header .navbar-nav {
     margin: 0;
     float: none;
   }
   .header .navbar-nav .nav-item {
-    float: none;
+    float: bottom;
   }
   /* Menu Container */
   .header .menu-container:before, .header .menu-container:after {
@@ -850,8 +851,8 @@ fieldset[disabled] .btn-theme {
   /* Navbar Nav */
   .header .nav-item-child {
     color: #515769;
-    line-height: 1.4;
-    padding: 12px 12px 12px 15px;
+    line-height: 3.0;
+    padding: 0px;
   }
   .header .nav-item-hover:after {
     position: absolute;
@@ -870,10 +871,10 @@ fieldset[disabled] .btn-theme {
   }
   .header .navbar > .container {
     width: auto;
-    padding-left: 0;
-    padding-right: 0;
-    margin-left: 0;
-    margin-right: 0;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
   }
   .header .navbar > .container > .nav-collapse {
     padding-left: 0;
