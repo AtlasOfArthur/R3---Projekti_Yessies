@@ -56,7 +56,7 @@ li a {
   font-size: 20px;
   font-weight: 500;
   font-family: 'Sofia Sans Extra Condensed', sans-serif;
-  color: #ff00b3;
+  color: #ff5100;
 }
 
 a {
@@ -85,7 +85,7 @@ a:focus, a:hover, a:active {
   right: -15px;
   width: 9px;
   height: 2px;
-  background: #17bed2;
+  background: #12b1c1 !important;
   content: " ";
 }
 
@@ -94,13 +94,13 @@ span {
   font-size: 20px;
   font-weight: 400;
   font-family: 'Sofia Sans Extra Condensed', sans-serif;
-  color: #002db4;
+  color: #5a7bdd;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6 { /*otsikoiden värit vaihtuu tästä*/
   font-weight: 200;
   font-family: 'Sofia Sans Extra Condensed', sans-serif;
-  color: #f86ae0;
+  color: #12b1c1 !important;
   line-height: 1.4;
   text-align: right;
   margin: 0 0 15px;
@@ -108,7 +108,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 > a, h2 > a, h3 > a, h4 > a, h5 > a, h6 > a {
-  color: #00ff00;
+  color: #ebad28;
 }
 
 h1 > a:hover, h2 > a:hover, h3 > a:hover, h4 > a:hover, h5 > a:hover, h6 > a:hover {
@@ -116,9 +116,11 @@ h1 > a:hover, h2 > a:hover, h3 > a:hover, h4 > a:hover, h5 > a:hover, h6 > a:hov
   text-decoration: none;
 }
 .yessies2 { /* Pinjan taistelukenttä logon/kuvan kanssa. I am not winning */
-  text-align: right;
-  height: fit-content;
-  width: fit-content;
+ float: right;
+  width: 50%;
+  padding-right: 200px;
+  padding-top: 100px;
+  
   
 }
 
@@ -142,8 +144,9 @@ h3 {
 
 
 h4 { /* tästä kohdasta saa muokattua ota yhteyttä-osiota */
-  font-size: 60px;
-  text-align: center;
+    font-size: 60px;
+    text-align: center;
+    color: #12B1C1;
 }
 .contact { /* tää ei tällä hetkellä tee mitään :( */
   background-color: #2e2e30;
@@ -155,6 +158,7 @@ form { /*tein uuden rulesetin lomaketta varten, ei muuta kun säätämään /kii
   margin-right: auto;
   margin-bottom: auto;
   margin-top: auto;
+  color:white;
 }
 
 #etunimi { border-radius: 25px; /* lomakkeeseen pyöreät kulmat*/
@@ -164,8 +168,14 @@ form { /*tein uuden rulesetin lomaketta varten, ei muuta kun säätämään /kii
       height: 6px;
 }
 
-#form-button { 
+#form-button { /*valitse tiedosto nappi*/
     text-align: center;
+    color: white;
+}
+
+#submit-button { /* lähetä nappi*/
+    text-align: center;
+    color:black;
 }
 
 input { /*tämäkään ei kai tee mitään as of now */
@@ -608,9 +618,10 @@ fieldset[disabled] .btn-theme {
 }
 
 /* Navbar */
-.header .navbar {
-  margin-bottom: 0;
-  border-bottom: 1px solid rgb(140, 236, 15);
+.header .navbar { /* header navbar vaihtaa backgroundin värin tästä */
+  margin-bottom: 0px;
+  background-color: #2b2b2b;
+  border-bottom: 0px solid rgb(140, 236, 15);
   transition-duration: 300ms;
   transition-property: all;
   transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
