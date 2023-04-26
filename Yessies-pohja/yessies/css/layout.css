@@ -649,7 +649,7 @@ fieldset[disabled] .btn-theme {
 .header .navbar-toggle .toggle-icon:before, .header .navbar-toggle .toggle-icon:after {
   position: absolute;
   left: 0;
-  background: #515769;
+  background: #51576994;
   content: " ";
 }
 
@@ -773,8 +773,8 @@ fieldset[disabled] .btn-theme {
 .header .nav-item-child {
   position: relative;
   display: block;
-  font-size: 25px;
-  font-weight: 600;
+  font-size: 30px;
+  font-weight: 400;
   font-family: 'Sofia Sans Extra Condensed', sans-serif;
   color: #1bdbfd;
   text-transform: uppercase;
@@ -1077,8 +1077,8 @@ fieldset[disabled] .btn-theme {
 
 .carousel-title {
   font-size: 80px;
-  font-weight: 700;
-  color: #33ff00;
+  font-weight: 500;
+  color: #f06a52 !important;
   line-height: 1.1;
   text-transform: uppercase;
 }
