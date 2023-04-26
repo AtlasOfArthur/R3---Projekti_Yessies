@@ -24,7 +24,7 @@
 ------------------------------------------------------------------*/
 
 html {
-  /*@import url(''); Tähän menee fontti perheet @Import komennolla. EI TARVITSE LAITTAA TÄHÄN MITÄÄN! Kaikki tarpeelliset fontit löytyvät jo Github kansiosta!*/
+  /*@import url(''); Tähän menee fontti perheet @Import komennolla, muuta EI TARVITSE LAITTAA TÄHÄN MITÄÄN! Kaikki fontit löytyvät Github kansiosta!*/
   overflow-x: hidden;
 }
 
@@ -98,7 +98,7 @@ span {
 }
 
 h1, h2, h3, h4, h5, h6 { /*otsikoiden värit vaihtuu tästä*/
-  font-weight: 1000;
+  font-weight: 200;
   font-family: 'Sofia Sans Extra Condensed', sans-serif;
   color: #12b1c1 !important;
   line-height: 1.4;
