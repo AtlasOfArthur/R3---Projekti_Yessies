@@ -40,7 +40,7 @@ body {
 
 p {
   font-size: 22px;
-  text-align: center;
+  text-align: right;
   font-weight: 400;
   font-family:'Sofia Sans Extra Condensed', sans-serif;
   color: #c6c9d4;
@@ -103,7 +103,6 @@ h1, h2, h3, h4, h5, h6 { /*otsikoiden värit vaihtuu tästä*/
   color: #12b1c1 !important;
   line-height: 1.4;
   margin: 0 0 15px;
-
 }
 
 h1 > a, h2 > a, h3 > a, h4 > a, h5 > a, h6 > a {
@@ -133,7 +132,7 @@ h1 {
 
 h2 {
   font-size: 40px;
-  letter-spacing: 10px;
+  letter-spacing: 15px;
   text-align: center;
 }
 
