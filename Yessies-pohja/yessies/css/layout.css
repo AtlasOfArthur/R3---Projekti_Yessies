@@ -778,12 +778,12 @@ fieldset[disabled] .btn-theme {
   transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
 }
 
-.header .nav-item-child {
+.header .nav-item-child { /*Header fontin voi muuttaa täältä!*/
   position: relative;
   display: block;
-  font-size: 25px;
-  font-weight: 600;
-  font-family: 'Sofia Sans Extra Condensed', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  font-family: 'Sofia Sans Condensed', sans-serif;
   color: #1bdbfd;
   text-transform: uppercase;
   line-height: 55px;
