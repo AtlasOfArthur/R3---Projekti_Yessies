@@ -38,14 +38,14 @@ body {
   background-color: #2e2e30;
 }
 
-p {
-  font-size: 15px;
+p { /*tää vaihtaa leipätekstin kokoa*/
+  font-size: 18px;
   text-align: left;
-  font-weight: 400;
+  font-weight: 300;
   font-family:'Sofia Sans', sans-serif;
   color: #c6c9d4;
-  line-height: 1.4;
-  margin-bottom: 15px;
+  line-height: 1.8;
+  margin-bottom: 10px;
   word-spacing: 2px;
 
 }
@@ -61,13 +61,13 @@ li a {
 
 a {
   font-family: 'Sofia Sans Semi Condensed', sans-serif;
-  color: #81848f;
+  color: #12B1C1;
   outline: 0;
 }
 
 a:focus, a:hover, a:active {
   outline: 0;
-  color: #999caa;
+  color: #12B1C1;
   text-decoration: none;
 }
 
@@ -99,6 +99,7 @@ span {
 
 h1, h2, h3, h4, h5, h6 { /*otsikoiden värit vaihtuu tästä*/
   font-weight: 200;
+  font-size: 40px;
   font-family: 'Sofia Sans Extra Condensed', sans-serif;
   color: #12b1c1 !important;
   line-height: 1.4;
@@ -115,7 +116,7 @@ h1 > a:hover, h2 > a:hover, h3 > a:hover, h4 > a:hover, h5 > a:hover, h6 > a:hov
 }
 .yessies2 { /* Pinjan taistelukenttä logon/kuvan kanssa. I am not winning */
  float: right;
-  width: 50%;
+  width: 45%;
   padding-right: 200px;
   padding-top: 100px;
   
@@ -149,7 +150,7 @@ h4 { /* tästä kohdasta saa muokattua ota yhteyttä-osiota */
 }
 
 h5 { /*leipäteksti "Tietoa Minusta" */
-  font-size: 15px;
+  font-size: 25px; /*tää jostain syystä muokkaa vaan ota yhteyttä-lomakkeen sähköpostin fontin kokoa :D jotain on solmussa help*/
   text-align: center;
   font-weight: 300;
   font-family:'Sofia Sans', sans-serif;
@@ -197,7 +198,7 @@ input { /*tämäkään ei kai tee mitään as of now */
 
 ::-webkit-selection {
   color: #fff;
-  background: #17bed2;
+  background: #12B1C1;
   text-shadow: none;
 }
 
@@ -599,17 +600,17 @@ fieldset[disabled] .btn-theme {
   	[Footer]
 ------------------------------------------------------------------*/
 .footer .footer-logo {
-  width: 80px;
+  width: 120px;
   height: auto;
 }
 
 .footer .footer-list {
-  margin-bottom: 0;
+  margin-bottom: auto;
 }
 
 .footer .footer-list-item {
   color: #777984;
-  margin-bottom: 15px;
+  margin-bottom: 25px;
 }
 
 .footer .footer-list-item:last-child {
@@ -628,7 +629,7 @@ fieldset[disabled] .btn-theme {
 .header .navbar { /* header navbar vaihtaa backgroundin värin tästä */
   margin-bottom: 0px;
   background-color: #2b2b2be1;
-  border-bottom: 1px solid #8d8d8d;
+  border-bottom: 1px solid #8d8d8d80;
   transition-duration: 300ms;
   transition-property: all;
   transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
@@ -657,7 +658,7 @@ fieldset[disabled] .btn-theme {
 .header .navbar-toggle .toggle-icon:before, .header .navbar-toggle .toggle-icon:after {
   position: absolute;
   left: 0;
-  background: #515769;
+  background-color: #2b2b2be1;
   content: " ";
 }
 
@@ -781,31 +782,32 @@ fieldset[disabled] .btn-theme {
 .header .nav-item-child { /*Header fontin voi muuttaa täältä!*/
   position: relative;
   display: block;
-  font-size: 20px;
-  font-weight: 400;
+  font-size: 30px;
+  font-weight: 350;
   font-family: 'Sofia Sans Condensed', sans-serif;
-  color: #1bdbfd;
+  color: #12B1C1 !important; /*tällä !importantilla fontti pysyy sinisenä koko sivulla t. Pinja*/
   text-transform: uppercase;
-  line-height: 55px;
-  padding: 20px;
+  line-height: 35px;
+  padding: 10px;
   transition-duration: 300ms;
   transition-property: all;
   transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
 }
 
 .header .nav-item-child:hover, .header .nav-item-child:focus {
-  background: #4ed4f24d;
+  background: #12b2c127; /*tästä kohtaa vaihtuu hover-nappulan väri ja myös varmaan koko t. Pinja*/
+  
 }
 
 .header .nav-item-hover {
   position: relative;
 }
 
-.header .nav-item-hover:after {
+.header .nav-item-hover:after { /*tää on se headerin tekstin alla oleva viiva t. Pinja*/
   position: absolute;
   top: 45px;
   left: 0;
-  width: 9px;
+  width: 100px;
   height: 2px;
   background: #17bed2;
   opacity: 0;
@@ -859,7 +861,7 @@ fieldset[disabled] .btn-theme {
   }
   /* Navbar Nav */
   .header .nav-item-child {
-    color: #515769;
+    color: #12B1C1 !important;
     line-height: 3.0;
     padding: 0px;
   }
@@ -903,9 +905,10 @@ fieldset[disabled] .btn-theme {
 
 /* Page On Scroll */
 @media (min-width: 992px) {
-  .page-on-scroll .header .navbar {
-    background: #2e2e30;
-    border-bottom-color: #f0f0f0;
+  .page-on-scroll .header .navbar { /*täältä sain headerin vaihdettua läpinäkyväksi*/
+    background-color: #2b2b2be1;
+    color: #12B1C1;
+    border-bottom-color: #8d8d8d9f;
     transition-duration: 300ms;
     transition-property: all;
     transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
@@ -923,7 +926,7 @@ fieldset[disabled] .btn-theme {
     transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
   }
   .page-on-scroll .header .nav-item-child {
-    color: #878ea5;
+    color: #878ea5; /*tästäkin ehkä onnistuu fontin värin vaihto kun sivulla liikkuu?*/
     transition-duration: 300ms;
     transition-property: all;
     transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
