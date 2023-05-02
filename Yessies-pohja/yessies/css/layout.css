@@ -712,8 +712,10 @@ body{
 .header .navbar-toggle .toggle-icon:before, .header .navbar-toggle .toggle-icon:after {
   position: absolute;
   left: 0;
-  background-color: #2b2b2be1;
-  content: " ";
+ /* background-color: #2b2b2be1;*/
+  content: "Where am i?"; /*Tyhjä content alunperin >> : " "; */
+  background-color:#ff5100; /* Taustaväri = Viivojen väri! (Paitsi alin. Se ei oo before elementti)*/
+
 }
 
 .header .navbar-toggle .toggle-icon:before {

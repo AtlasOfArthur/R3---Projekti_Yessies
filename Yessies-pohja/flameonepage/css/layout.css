@@ -80,7 +80,9 @@ a:focus, a:hover, a:active {
   width: 9px;
   height: 2px;
   background: #17bed2;
-  content: " ";
+  content: " after link txt"; /* Ei näy missään? */
+  color: red;
+  font-weight: bold;
 }
 
 span {
