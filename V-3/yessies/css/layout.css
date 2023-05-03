@@ -49,7 +49,15 @@ p { /*tää vaihtaa leipätekstin kokoa*/
   word-spacing: 2px;
 
 }
-
+#palvelut p { /*rakensin pienen rulesetin palvelut-osion teksteille t. Pinja*/
+text-align: left;
+padding-left: 30px;
+font-size: 18px;
+font-weight: 300;
+line-height: 1.8;
+margin-bottom: 10px;
+word-spacing: 2px;
+}
 em,
 li,
 li a {
@@ -115,12 +123,46 @@ h1 > a:hover, h2 > a:hover, h3 > a:hover, h4 > a:hover, h5 > a:hover, h6 > a:hov
   text-decoration: none;
 }
 .yessies2 { /* Pinjan taistelukenttä logon/kuvan kanssa. I am not winning */
+ display: block;
  float: right;
-  width: 45%;
-  padding-right: 200px;
-  padding-top: 100px;
+  width: 400px;
+  height: 400px;
+  object-fit: contain;
+  padding-left: 50px;
+  padding-top: 50px;
   
   
+}
+.tyokuva1 { /*ruleset palvelut-osion kuville*/
+  margin-left: 50px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  display: block;
+  float: left;
+}
+.tyokuva2 {
+  margin-left: 50px;
+  margin-bottom: 20px;
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  display: block;
+  float: center;
+}
+.tyokuva3 {
+  margin-left: 50px;
+  margin-bottom: 20px;
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  display: block;
+  float: right;
+  position: relative;
+  left: -200px;
+  bottom: 200px;
 }
 
 h1 > a:focus, h2 > a:focus, h3 > a:focus, h4 > a:focus, h5 > a:focus, h6 > a:focus {
