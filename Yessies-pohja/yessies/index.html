@@ -179,16 +179,17 @@
         <div class="section-seperator"></div>
     <div id="palvelut">
         <h2>PALVELUT</h2>
-        <!-- Kuvat lisätty, rulesetti CSS:ssä -->
-        <img class="tyokuva1"
-        src="img/yessies/solheds4.jpg"
-        alt="Työkuva 1">
-        <img class="tyokuva2"
-        src="img/yessies/hairbesties1.jpg"
-        alt="Työkuva 2">
-        <img class="tyokuva3"
-        src="img/yessies/islandriddles1.jpg"
-        alt="Työkuva 3">
+        <div class="row">
+            <div class="column"> <!-- näille on oma ruleset olemassa, osa säädöistä löytyy tästä alta style-osiosta t. Pinja -->
+                <img src="img/yessies/tyokuva1.JPG" alt="Työkuva 1" style="width: 250px; height: 250px; border-radius: 50%;">
+            </div>
+            <div class="column">
+                <img src="img/yessies/tyokuva2.JPG" alt="Työkuva 2" style="width: 250px; height: 250px; border-radius: 50%;">
+            </div>
+            <div class="column">
+                <img src="img/yessies/tyokuva3.JPG" alt="Työkuva 3" style="width: 250px; height: 250px; border-radius: 50%;">
+            </div>
+        </div>
         <p>Tarjoan erilaisia paino- ja mainospalveluita.</p> <!-- Tälle osiolle löytyy oma ruleset CSS-tiedostosta -->
         <p>Olen erikoistunut erilaisten mainosvaatteiden sekä mainosten suunnitteluun.</p>
         <p>Kauttani voit tilata yrityksellesi niin mainoksen tapahtumaan, kuin työvaatteet yrityksesi logolla!</p>
