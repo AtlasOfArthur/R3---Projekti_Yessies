@@ -210,7 +210,7 @@ form { /*tein uuden rulesetin lomaketta varten, ei muuta kun säätämään /kii
   margin-top: auto;
 }
 
-.form-box {
+.form-box { /*ota yhteyttä osion tekstikenttien otsikot*/
     color: white;
 }
 
@@ -691,6 +691,10 @@ body{
 /*------------------------------------------------------------------
   	[Footer]
 ------------------------------------------------------------------*/
+.mediat {
+    text-align:center;
+}
+
 .footer .footer-logo {
   width: 120px;
   height: auto;
