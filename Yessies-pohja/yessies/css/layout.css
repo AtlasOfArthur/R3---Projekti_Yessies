@@ -506,7 +506,7 @@ body{
 .row{
   display: flex;
   flex-wrap: wrap;
-  padding: 0px 100px 100px;
+  padding: 100px 100px 100px; /*eka 100px säätää top-bottom-akselia, jostain syystä säätää kaikkea koko sivulla eikä vaan portfoliossa*/
 }
 .column{
   flex: 25%;
@@ -677,7 +677,7 @@ body{
   	[Footer]
 ------------------------------------------------------------------*/
 .mediat {
-    font-size 10px;
+    font-size: 10px;
 }
 
 .footer .footer-logo {
