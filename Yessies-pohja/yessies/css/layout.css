@@ -156,9 +156,11 @@ h1 > a:hover, h2 > a:hover, h3 > a:hover, h4 > a:hover, h5 > a:hover, h6 > a:hov
 }
 .yessies2 { /* Pinjan taistelukenttä logon/kuvan kanssa. I am not winning */
  float: right;
-  width: 45%;
+  width: 33.3%;
   padding-right: 200px;
-  padding-top: 100px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  object-fit: fill;
   
   
 }
