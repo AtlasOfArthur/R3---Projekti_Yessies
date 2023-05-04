@@ -208,7 +208,10 @@ form { /*tein uuden rulesetin lomaketta varten, ei muuta kun säätämään /kii
   margin-right: auto;
   margin-bottom: auto;
   margin-top: auto;
-  color:white;
+}
+
+.form-box {
+    color: white;
 }
 
 #form-button { /*valitse tiedosto nappi*/
