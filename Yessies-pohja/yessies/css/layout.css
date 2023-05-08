@@ -701,6 +701,7 @@ body{
 .fa /* kaikki font awesome iconit */ {
     font-size: 30px;
     padding: 10px;
+    margin-right: 50%;
 }
 
 /*------------------------------------------------------------------
