@@ -1155,7 +1155,7 @@ body{
     [Carousel]
 ------------------------------------------------------------------*/
 .carousel-indicators {
-  left: auto;
+  align-items: center; /* left muutettu keskitetyksi */
   width: auto;
   padding-left: 0;
   margin-left: 0;
