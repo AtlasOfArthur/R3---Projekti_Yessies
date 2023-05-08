@@ -58,7 +58,6 @@ p { /*tää vaihtaa leipätekstin kokoa*/
 }
 #palvelut p { /*rakensin pienen rulesetin palvelut-osion teksteille t. Pinja*/
   text-align: left;
-  padding-left: 50px;
   font-size: 18px;
   font-weight: 300;
   line-height: 1.8;
@@ -69,13 +68,13 @@ p { /*tää vaihtaa leipätekstin kokoa*/
 #palvelut .row { /*toinenkin ruleset kuvien säädöille*/
 display: flex;
 position: relative;
-left: 270px;
-top: 30px;
+left: 220px;
+top: 20px;
 }
 #palvelut .column {
   flex: 30%;
   padding: 30px;
-  padding-bottom: 10px;
+  
 }
 em,
 li,
@@ -141,13 +140,15 @@ h1 > a:hover, h2 > a:hover, h3 > a:hover, h4 > a:hover, h5 > a:hover, h6 > a:hov
   color: #eeff00;
   text-decoration: none;
 }
-.yessies2 { /* Pinjan taistelukenttä logon/kuvan kanssa. I am not winning */
+.yessies2 { /* Jessican profiilikuva */
  float: right;
-  width: 25%;
-  padding-right: 150px;
-  padding-top: 50px;
-  padding-bottom: 50px;
-  object-fit: fill; 
+ position: relative;
+ right: 60px;
+ top: 80px;
+  width: 550px;
+  height: 500px;
+  object-fit: fill;
+  border-radius: 50%;
 }
 
 h1 > a:focus, h2 > a:focus, h3 > a:focus, h4 > a:focus, h5 > a:focus, h6 > a:focus {
@@ -495,8 +496,7 @@ body{
   margin: 0;
 }
 .header{
-  text-align: center;
-  padding: 32px;
+  text-align: center; /* tässä oli aiemmin padding 32px, vaikutti siihen että header ei ollut täysikokoinen */
 }
 .header h1{
   font-family: 'Caveat', cursive;
