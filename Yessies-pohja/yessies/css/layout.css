@@ -789,7 +789,7 @@ body{
 
 .header .navbar-toggle:hover .toggle-icon:before, .header .navbar-toggle:hover .toggle-icon:after {
   width: 21px;
-  height: 21px;
+  height: 1px; /* Täytyy olla 1px (viiva vaan levenee. Sen korkeus ei muutu)*/ 
   background: #17bed2;
   transition-duration: 300ms;
   transition-property: all;
