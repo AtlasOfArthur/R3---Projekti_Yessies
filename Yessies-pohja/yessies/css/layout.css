@@ -736,7 +736,7 @@ body{
   width: 21px;
   height: 1px;
   display: inline-block;
-  background: #275bf8;
+  background: #17bed2; /* Tästä vaihtuu alimman viivan väri (Arthur)*/
   transition-duration: 300ms;
   transition-property: all;
   transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
@@ -746,8 +746,8 @@ body{
   position: absolute;
   left: 0;
  /* background-color: #2b2b2be1;*/
-  content: "Where am i?"; /*Tyhjä content alunperin >> : " "; */
-  background-color:#ff5100; /* Taustaväri = Viivojen väri! (Paitsi alin. Se ei oo before elementti)*/
+  content: " "; /*Tyhjä content alunperin >> : " "; (Kontentti poistettu jotta näkyy oikein) */
+  background-color:#17bed2; /* Taustaväri = Viivojen väri! (Paitsi alin. Se ei oo before elementti)*/
 
 }
 
@@ -797,8 +797,9 @@ body{
 
 /* Navbar Logo */
 .header .logo {
+  padding-top: 5px;; /* Vähän oikasua... */
   width: 100px;  /* Logolle varattu tila headerissa? (Leveys) */
-  height: 167.5px; /*  -||-                            (Lorkeus)*/
+  height: 100px; /*  -||-                          (Korkeus)*/
   float: inline;  /* Oli inline-end, jolloin logo meni oikeaan laitaan. Nyt vasemmalla kuten pitää. (Arthur)*/
   max-height: 100%;
   line-height: 65px;
@@ -815,7 +816,7 @@ body{
 
 .header .logo-img {
   display: block;
-  padding-top: 60px;
+  padding-top: 30px; /* Puolitettu arvo(60). Asettuu näin paremmin(30) */
   margin-left: 60px;
   width: 100%;
   height: auto;
@@ -831,6 +832,7 @@ body{
 }
 
 .header .logo-img-active {
+  padding-bottom: 10px;
   display: none;
   transition-duration: 400ms;
   transition-property: all;
