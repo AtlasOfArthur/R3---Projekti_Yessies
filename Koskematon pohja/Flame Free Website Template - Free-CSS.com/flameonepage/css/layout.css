@@ -22,9 +22,7 @@
   	[The "base.scss" contains basic default element styles
   		(colors, typography, margins & padding).]
 ------------------------------------------------------------------*/
-
 html {
-  /*@import url(''); Tähän menee fontti perheet @Import komennolla, muuta EI TARVITSE LAITTAA TÄHÄN MITÄÄN! Kaikki fontit löytyvät Github kansiosta!*/
   overflow-x: hidden;
 }
 
@@ -34,74 +32,44 @@ html, html a, body {
 
 body {
   position: relative;
-  font-family: 'Sofia Sans Extra Condensed', sans-serif;
-  background-color: #2e2e30;
+  font-family: Hind, sans-serif;
 }
 
-p { /*tää vaihtaa leipätekstin kokoa*/
-  font-size: 18px;
-  text-align: left;
-  font-weight: 300;
-  font-family:'Sofia Sans', sans-serif;
-  color: #c6c9d4;
-  line-height: 1.8;
-  margin-bottom: 10px !important;
-  word-spacing: 2px;
+p {
+  font-size: 15px;
+  font-weight: 400;
+  font-family: Hind, sans-serif;
+  color: #a6a7aa;
+  line-height: 1.4;
+  margin-bottom: 15px;
+}
 
-}
-#about-me p { /*ruleset about me-osan tekstille, seikkailee muuten miten sattuu*/
-  text-align: left;
-  padding-top: 20px;
-  margin-bottom: 10px;
-  padding-right: 20px;
-  word-spacing: 2px;
-}
-#palvelut p { /*rakensin pienen rulesetin palvelut-osion teksteille t. Pinja*/
-  text-align: left;
-  font-size: 18px;
-  font-weight: 300;
-  line-height: 1.8;
-  margin-left: 50px;
-  margin-bottom: 10px;
-  word-spacing: 2px;
-}
-#palvelut .row { /*toinenkin ruleset kuvien säädöille*/
-display: flex;
-position: relative;
-left: 220px;
-top: 20px;
-}
-#palvelut .column {
-  flex: 30%;
-  padding: 30px;
-  
-}
 em,
 li,
 li a {
-  font-size: 20px;
-  font-weight: 1000;
-  font-family: 'Sofia Sans', sans-serif;
-  color: #ff5100;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: Hind, sans-serif;
+  color: #515769;
 }
 
 a {
-  font-family: 'Sofia Sans Semi Condensed', sans-serif;
-  color: #12B1C1;
+  font-family: Hind, sans-serif;
+  color: #81848f;
   outline: 0;
 }
 
 a:focus, a:hover, a:active {
   outline: 0;
-  color: #12B1C1;
+  color: #999caa;
   text-decoration: none;
 }
 
 .link {
   position: relative;
-  font-size: 20px;
+  font-size: 13px;
   font-weight: 600;
-  font-family: 'Sofia Sans Extra Condensed', sans-serif;
+  font-family: Hind, sans-serif;
   text-transform: uppercase;
 }
 
@@ -111,44 +79,32 @@ a:focus, a:hover, a:active {
   right: -15px;
   width: 9px;
   height: 2px;
-  background: #12b1c1 !important;
+  background: #17bed2;
   content: " ";
 }
 
-
 span {
-  font-size: 20px;
+  font-size: 14px;
   font-weight: 400;
-  font-family: 'Sofia Sans Extra Condensed', sans-serif;
-  color: #5a7bdd;
+  font-family: Hind, sans-serif;
+  color: #bfc1c7;
 }
 
-h1, h2, h3, h4, h5, h6 { /*otsikoiden värit vaihtuu tästä*/
-  font-weight: 200 !important;
-  font-size: 40px !important;
-  font-family: 'Sofia Sans Extra Condensed', sans-serif !important;
-  color: #12b1c1 !important;
-  line-height: 1.4 !important;
-  margin: 10 0 25px !important; /*vaikuttaa otsikon ilmavuuteen, 10 on ylhäällä ja 25 alhaalla*/
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  font-family: Hind, sans-serif;
+  color: #515769;
+  line-height: 1.4;
+  margin: 0 0 15px;
 }
 
 h1 > a, h2 > a, h3 > a, h4 > a, h5 > a, h6 > a {
-  color: #ebad28;
+  color: #515769;
 }
 
 h1 > a:hover, h2 > a:hover, h3 > a:hover, h4 > a:hover, h5 > a:hover, h6 > a:hover {
-  color: #eeff00;
+  color: #999caa;
   text-decoration: none;
-}
-.yessies2 { /* Jessican profiilikuva */
- float: right;
- position: relative;
- right: 60px;
- top: 80px;
-  width: 550px;
-  height: 500px;
-  object-fit: fill;
-  border-radius: 50%;
 }
 
 h1 > a:focus, h2 > a:focus, h3 > a:focus, h4 > a:focus, h5 > a:focus, h6 > a:focus {
@@ -157,61 +113,18 @@ h1 > a:focus, h2 > a:focus, h3 > a:focus, h4 > a:focus, h5 > a:focus, h6 > a:foc
 
 h1 {
   font-size: 40px;
-  color: #275bf8;
 }
 
 h2 {
-  font-size: 40px;
-  letter-spacing: 15px;
-  text-align: center;
+  font-size: 30px;
 }
 
 h3 {
-  font-size: 25px;
+  font-size: 22px;
 }
 
-
-h4 { /* tästä kohdasta saa muokattua ota yhteyttä-osiota */
-  font-size: 60px;
-  text-align: center;
-  color: #12B1C1;
-}
-
-h5 { /*leipäteksti "Tietoa Minusta" */
-  font-size: 25px; /*tää jostain syystä muokkaa vaan ota yhteyttä-lomakkeen sähköpostin fontin kokoa :D jotain on solmussa help*/
-  text-align: center;
-  font-weight: 300;
-  font-family:'Sofia Sans', sans-serif;
-  color: #c6c9d4;
-}
-.contact { /* tää ei tällä hetkellä tee mitään :( */
-  background-color: #2e2e30;
-}
-form { /*tein uuden rulesetin lomaketta varten, ei muuta kun säätämään /kiitos :) t.Renja*/
-  font-size: 25px;
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: auto;
-  margin-top: auto;
-}
-
-.form-box { /*ota yhteyttä osion tekstikenttien otsikot*/
-    color: white;
-}
-
-#form-button { /*valitse tiedosto nappi*/
-    text-align: center;
-    color: white;
-}
-
-#submit-button { /* lähetä nappi*/
-    text-align: center;
-    color:black;
-}
-
-input { /*tämäkään ei kai tee mitään as of now */
-  box-sizing: content-box;
+h4 {
+  font-size: 22px;
 }
 
 ::selection {
@@ -222,7 +135,7 @@ input { /*tämäkään ei kai tee mitään as of now */
 
 ::-webkit-selection {
   color: #fff;
-  background: #12B1C1;
+  background: #17bed2;
   text-shadow: none;
 }
 
@@ -237,9 +150,9 @@ input { /*tämäkään ei kai tee mitään as of now */
   outline: none;
 }
 
-/* Section Seperator, tulee näkyviin osioiden välissä pienenä viivana */
+/* Section Seperator */
 .section-seperator {
-  border-bottom: 1px solid #8d8d8d79;
+  border-bottom: 1px solid #edf0f2;
 }
 
 /* Content Wrapper Link */
@@ -295,7 +208,7 @@ input { /*tämäkään ei kai tee mitään as of now */
 
 .accordion [aria-expanded="true"],
 .accordion .collapse.in {
-  color: #ffffff;
+  color: #fff;
   background: #17bed2;
 }
 
@@ -387,7 +300,7 @@ fieldset[disabled] .btn-theme {
 }
 
 .btn-theme-sm {
-  font-size: 20px;
+  font-size: 13px;
   font-weight: 600;
   padding: 15px 40px;
 }
@@ -449,7 +362,7 @@ fieldset[disabled] .btn-theme {
   	[Service]
 ------------------------------------------------------------------*/
 .service {
-  background: #272626;
+  background: #fff;
   padding: 50px;
 }
 
@@ -466,7 +379,7 @@ fieldset[disabled] .btn-theme {
 .service .service-icon {
   display: block;
   font-size: 30px;
-  color: #17181a;
+  color: #999caa;
   margin-bottom: 30px;
 }
 
@@ -490,73 +403,16 @@ fieldset[disabled] .btn-theme {
 }
 
 /*------------------------------------------------------------------
-  	[Pröötfolio]
-------------------------------------------------------------------*/
-body{
-  margin: 0;
-}
-.header{
-  text-align: center; /* tässä oli aiemmin padding 32px, vaikutti siihen että header ei ollut täysikokoinen */
-}
-.header h1{
-  font-family: 'Caveat', cursive;
-  font-size: 50px;
-}
-
-.row{
-  display: flex;
-  flex-wrap: wrap;
-  padding: 100px 100px 100px; /*eka 100px säätää top-bottom-akselia, jostain syystä säätää kaikkea koko sivulla eikä vaan portfoliossa*/
-}
-.column{
-  flex: 25%;
-  max-width: 25%;
-}
-.img-hover-zoom{
-  height: auto;
-  overflow: hidden;
-  border: 5px solid #2E2E30;
-}
-.img-hover-zoom img{
-  vertical-align: middle;
-  margin: 0;
-  padding: 0;
-  border: 0;
-  transition:  transform .5s ease;
-}
-.img-hover-zoom:hover img{
-  transform: scale(1.5);
-}
-
-@media screen and (max-width: 800px) {
-  .column{
-      flex: 50%;
-      max-width: 50%;
-  }
-}
-
-@media screen and (max-width: 500px) {
-  .column{
-      flex: 100%;
-      max-width: 100%;
-  }
-}
-
-/*------------------------------------------------------------------
   	[Work]
 ------------------------------------------------------------------*/
 /* Overlay */
 .work {
   position: relative;
   display: block;
-  margin-bottom: auto;
-  margin-top: auto;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .work .work-overlay {
-  position: static;
+  position: relative;
   cursor: pointer;
 }
 
@@ -574,11 +430,8 @@ body{
 }
 
 .work:hover .work-overlay:before {
-  background: rgba(58, 53, 53, 0.5);
+  background: rgba(0, 0, 0, 0.5);
   transition-duration: 300ms;
-  content: "LISÄÄ...";
-  text-align: right;
-  font-size: 30px;
   transition-property: all;
   transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
 }
@@ -597,7 +450,7 @@ body{
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   overflow-x: hidden;
-  background: rgba(112, 222, 9, 0.267);
+  background: rgba(81, 87, 105, 0.4);
   transition-duration: 300ms;
   transition-property: all;
   transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
@@ -645,16 +498,16 @@ body{
 
 .work .work-popup-close {
   float: right;
-  font-size: 25px;
+  font-size: 13px;
   font-weight: 700;
-  color: #d61bc0;
+  color: #c5c6cb;
   transition-duration: 300ms;
   transition-property: all;
   transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
 }
 
 .work .work-popup-close:hover {
-  color: #d61bc0;
+  color: #aaacb3;
   transition-duration: 300ms;
   transition-property: all;
   transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
@@ -676,37 +529,22 @@ body{
 /*------------------------------------------------------------------
   	[Footer]
 ------------------------------------------------------------------*/
-.mediat {
-    font-size: 10px;
-}
-
-.footer-logo {
-  width: 120px;
+.footer .footer-logo {
+  width: 100px;
   height: auto;
-  margin-left: 15%;
 }
 
 .footer .footer-list {
-  margin-bottom: auto;
+  margin-bottom: 0;
 }
 
 .footer .footer-list-item {
   color: #777984;
-  margin-bottom: 25px;
+  margin-bottom: 15px;
 }
 
 .footer .footer-list-item:last-child {
   margin-bottom: 0;
-}
-
-.fa /* kaikki font awesome iconit */ {
-    font-size: 30px;
-    padding: 10px;
-    margin-right: 80%;
-}
-.yhteystiedot {
-    margin-left: 10%;
-    margin-bottom: 50%;
 }
 
 /*------------------------------------------------------------------
@@ -714,14 +552,13 @@ body{
 ------------------------------------------------------------------*/
 /* Fixed Top */
 .navbar-fixed-top .navbar-collapse {
-  display: block;
+  max-height: 100%;
 }
 
 /* Navbar */
-.header .navbar { /* header navbar vaihtaa backgroundin värin tästä */
-  margin-bottom: 0px;
-  background-color: #2b2b2be1;
-  border-bottom: 1px solid #8d8d8d80;
+.header .navbar {
+  margin-bottom: 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   transition-duration: 300ms;
   transition-property: all;
   transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
@@ -733,7 +570,7 @@ body{
   height: 25px;
   border: none;
   padding: 0;
-  margin: 10px 0;
+  margin: 35px 0;
 }
 
 .header .navbar-toggle .toggle-icon {
@@ -741,7 +578,7 @@ body{
   width: 21px;
   height: 1px;
   display: inline-block;
-  background: #17bed2; /* Tästä vaihtuu alimman viivan väri (Arthur)*/
+  background: #515769;
   transition-duration: 300ms;
   transition-property: all;
   transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
@@ -750,10 +587,8 @@ body{
 .header .navbar-toggle .toggle-icon:before, .header .navbar-toggle .toggle-icon:after {
   position: absolute;
   left: 0;
- /* background-color: #2b2b2be1;*/
-  content: " "; /*Tyhjä content alunperin >> : " "; (Kontentti poistettu jotta näkyy oikein) */
-  background-color:#17bed2; /* Taustaväri = Viivojen väri! (Paitsi alin. Se ei oo before elementti)*/
-
+  background: #515769;
+  content: " ";
 }
 
 .header .navbar-toggle .toggle-icon:before {
@@ -789,7 +624,7 @@ body{
 
 .header .navbar-toggle:hover .toggle-icon:before, .header .navbar-toggle:hover .toggle-icon:after {
   width: 21px;
-  height: 21px;
+  height: 1px;
   background: #17bed2;
   transition-duration: 300ms;
   transition-property: all;
@@ -797,22 +632,21 @@ body{
 }
 
 .header .navbar-toggle:hover .toggle-icon.is-clicked {
-  background: rgba(81, 82, 79, 0.493);
+  background: rgba(81, 87, 105, 0);
 }
 
 /* Navbar Logo */
 .header .logo {
-  padding-top: 5px;; /* Vähän oikasua... */
-  width: 100px;  /* Logolle varattu tila headerissa? (Leveys) */
-  height: 100px; /*  -||-                          (Korkeus)*/
-  float: inline;  /* Oli inline-end, jolloin logo meni oikeaan laitaan. Nyt vasemmalla kuten pitää. (Arthur)*/
-  max-height: 100%;
+  width: 150px;
+  height: 150px;
+  float: left;
+  max-height: 95px;
   line-height: 65px;
 }
 
 .header .logo-wrap {
-  display: block;
-  padding: 0px;
+  display: inline-block;
+  padding: 15px 0;
 }
 
 .header .logo-wrap:focus, .header .logo-wrap:hover {
@@ -820,13 +654,12 @@ body{
 }
 
 .header .logo-img {
-  display: block;
-  padding-top: 30px; /* Puolitettu arvo(60). Asettuu näin paremmin(30) */
-  margin-left: 60px;
-  width: 100%;
+  display: inline-block;
+  width: 146px;
   height: auto;
   max-width: 100%;
   max-height: 100%;
+  vertical-align: middle;
 }
 
 .header .logo-img-main {
@@ -837,7 +670,6 @@ body{
 }
 
 .header .logo-img-active {
-  padding-bottom: 10px;
   display: none;
   transition-duration: 400ms;
   transition-property: all;
@@ -846,8 +678,8 @@ body{
 
 /* Navbar */
 .header .navbar-nav {
-  padding-left: auto;
-  margin-bottom: 20px;
+  padding-left: 0;
+  margin-bottom: 0;
   list-style: none;
 }
 
@@ -875,35 +707,34 @@ body{
   transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
 }
 
-.header .nav-item-child { /*Header fontin voi muuttaa täältä!*/
+.header .nav-item-child {
   position: relative;
   display: block;
-  font-size: 30px;
-  font-weight: 350;
-  font-family: 'Sofia Sans Condensed', sans-serif;
-  color: #12B1C1 !important; /*tällä !importantilla fontti pysyy sinisenä koko sivulla t. Pinja*/
+  font-size: 13px;
+  font-weight: 600;
+  font-family: Hind, sans-serif;
+  color: #fff;
   text-transform: uppercase;
-  line-height: 35px;
-  padding: 10px;
+  line-height: 55px;
+  padding: 20px;
   transition-duration: 300ms;
   transition-property: all;
   transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
 }
 
 .header .nav-item-child:hover, .header .nav-item-child:focus {
-  background: #12b2c127; /*tästä kohtaa vaihtuu hover-nappulan väri ja myös varmaan koko t. Pinja*/
-  
+  background: transparent;
 }
 
 .header .nav-item-hover {
   position: relative;
 }
 
-.header .nav-item-hover:after { /*tää on se headerin tekstin alla oleva viiva t. Pinja*/
+.header .nav-item-hover:after {
   position: absolute;
   top: 45px;
   left: 0;
-  width: 100px;
+  width: 9px;
   height: 2px;
   background: #17bed2;
   opacity: 0;
@@ -924,21 +755,21 @@ body{
     display: block;
   }
   .header .navbar-collapse.collapse {
-    display: block !important;
+    display: none !important;
   }
   .header .navbar-collapse.collapse.in {
     display: block !important;
   }
   .header .nav-collapse {
-    padding-left: 0px;
-    padding-right: 0px;
+    padding-left: 0;
+    padding-right: 0;
   }
   .header .navbar-nav {
     margin: 0;
     float: none;
   }
   .header .navbar-nav .nav-item {
-    float: bottom;
+    float: none;
   }
   /* Menu Container */
   .header .menu-container:before, .header .menu-container:after {
@@ -957,9 +788,9 @@ body{
   }
   /* Navbar Nav */
   .header .nav-item-child {
-    color: #12B1C1 !important;
-    line-height: 3.0;
-    padding: 0px;
+    color: #515769;
+    line-height: 1.4;
+    padding: 12px 12px 12px 15px;
   }
   .header .nav-item-hover:after {
     position: absolute;
@@ -978,10 +809,10 @@ body{
   }
   .header .navbar > .container {
     width: auto;
-    padding-left: 0px;
-    padding-right: 0px;
-    margin-left: 0px;
-    margin-right: 0px;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 0;
+    margin-right: 0;
   }
   .header .navbar > .container > .nav-collapse {
     padding-left: 0;
@@ -1001,10 +832,9 @@ body{
 
 /* Page On Scroll */
 @media (min-width: 992px) {
-  .page-on-scroll .header .navbar { /*täältä sain headerin vaihdettua läpinäkyväksi*/
-    background-color: #2b2b2be1;
-    color: #12B1C1;
-    border-bottom-color: #8d8d8d9f;
+  .page-on-scroll .header .navbar {
+    background: #fff;
+    border-bottom-color: #f0f0f0;
     transition-duration: 300ms;
     transition-property: all;
     transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
@@ -1022,7 +852,7 @@ body{
     transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
   }
   .page-on-scroll .header .nav-item-child {
-    color: #878ea5; /*tästäkin ehkä onnistuu fontin värin vaihto kun sivulla liikkuu?*/
+    color: #515769;
     transition-duration: 300ms;
     transition-property: all;
     transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
@@ -1033,7 +863,7 @@ body{
   	[Contact]
 ------------------------------------------------------------------*/
 .contact-list > li {
-  font-size: 20px;
+  font-size: 13px;
   color: #81848f;
   margin-bottom: 10px;
 }
@@ -1116,7 +946,7 @@ body{
 ------------------------------------------------------------------*/
 .form-control {
   height: 50px;
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 400;
   color: #a6a7aa;
   background: #fafafa;
@@ -1168,7 +998,7 @@ body{
     [Carousel]
 ------------------------------------------------------------------*/
 .carousel-indicators {
-  align-items: center; /* left muutettu keskitetyksi */
+  left: auto;
   width: auto;
   padding-left: 0;
   margin-left: 0;
@@ -1185,7 +1015,7 @@ body{
 .carousel-title {
   font-size: 80px;
   font-weight: 700;
-  color: #33ff00;
+  color: #fff;
   line-height: 1.1;
   text-transform: uppercase;
 }
@@ -1237,7 +1067,7 @@ body{
 }
 
 .color-heading {
-  color: #ff009d !important;
+  color: #515769 !important;
 }
 
 .color-subtitle {
@@ -1264,27 +1094,27 @@ body{
 }
 
 .bg-color-white {
-  background: #111111 !important;
+  background: #fff !important;
 }
 
 .bg-color-heading {
-  background: #2b2b2b !important;
+  background: #515769 !important;
 }
 
 .bg-color-subtitle {
-  background: #3e4763 !important;
+  background: #a6a7aa !important;
 }
 
 .bg-color-link {
-  background: #ff00b3 !important;
+  background: #81848f !important;
 }
 
 .bg-color-link-hover {
-  background: #455fd4 !important;
+  background: #999caa !important;
 }
 
 .bg-color-sky-light {
-  background: #2e2e30 !important;
+  background: #fafafa !important;
 }
 
 /*------------------------------------------------------------------
@@ -1316,12 +1146,11 @@ body{
 .content-md {
   padding-top: 80px;
   padding-bottom: 80px;
-  background-color: #2e2e30;
 }
 
 .content-lg {
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 /*------------------------------------------------------------------
@@ -1330,6 +1159,29 @@ body{
 .full-width {
   width: 100%;
   height: auto;
+}
+
+/*--------------------------------------------------
+    [Font Weight]
+----------------------------------------------------*/
+.fweight-300 {
+  font-weight: 300 !important;
+}
+
+.fweight-400 {
+  font-weight: 400 !important;
+}
+
+.fweight-500 {
+  font-weight: 500 !important;
+}
+
+.fweight-600 {
+  font-weight: 600 !important;
+}
+
+.fweight-700 {
+  font-weight: 700 !important;
 }
 
 /*------------------------------------------------------------------
@@ -1398,7 +1250,7 @@ body{
 }
 
 .margin-t-50 {
-  margin-top: 30px !important;
+  margin-top: 50px !important;
 }
 
 .margin-t-60 {
