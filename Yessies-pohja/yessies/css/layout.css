@@ -680,9 +680,10 @@ body{
     font-size: 10px;
 }
 
-.footer .footer-logo {
+.footer-logo {
   width: 120px;
   height: auto;
+  margin-left: 15%;
 }
 
 .footer .footer-list {
@@ -701,7 +702,11 @@ body{
 .fa /* kaikki font awesome iconit */ {
     font-size: 30px;
     padding: 10px;
-    margin-right: 50%;
+    margin-right: 80%;
+}
+.yhteystiedot {
+    margin-left: 10%;
+    margin-bottom: 50%;
 }
 
 /*------------------------------------------------------------------
