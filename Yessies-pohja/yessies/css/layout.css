@@ -914,6 +914,8 @@ body{
 }
 
 /* Media Queries below 991px */
+
+/*      TABLETTI KOKO        */
 @media (max-width: 991px) {
   /* Bootstrap collapse of navigation with a maximum width: 991px
     (Change it to any breakpoint you want to be collapsed) */
@@ -968,6 +970,8 @@ body{
 }
 
 /* Media Queries below 767px */
+
+/*       MOBIILI KOKO        */
 @media (max-width: 767px) {
   /* Menu Container */
   .header .menu-container {
