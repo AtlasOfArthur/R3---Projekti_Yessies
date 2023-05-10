@@ -791,9 +791,9 @@ body{
 
 /* Navbar Logo */
 .header .logo {
-  width: 100px;
-  height: 100px;
-  float: inline-end;
+  width: 100px;  /* Logolle varattu tila headerissa? (Leveys) */
+  height: 167.5px; /*  -||-                            (Lorkeus)*/
+  float: inline;  /* Oli inline-end, jolloin logo meni oikeaan laitaan. Nyt vasemmalla kuten pitää. (Arthur)*/
   max-height: 100%;
   line-height: 65px;
 }
