@@ -733,7 +733,7 @@ body{
   height: 25px;
   border: none;
   padding: 0;
-  margin: 10px 0;
+  margin: 40px 20px; /* Padding muutettu 10px 0 -> 40px 20px (Asettuu kivasti keskilinjaan näin) */
 }
 
 .header .navbar-toggle .toggle-icon {
