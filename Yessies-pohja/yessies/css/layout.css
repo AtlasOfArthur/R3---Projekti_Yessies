@@ -982,12 +982,15 @@ body{
   }
   .header .navbar > .container {
     width: auto;
+    height: auto;
     padding-left: 0px;
     padding-right: 0px;
     margin-left: 0px;
     margin-right: 0px;
   }
   .header .navbar > .container > .nav-collapse {
+    width: 0;   /* Lisätty */
+    height: 0;  /* Lisätty    Toimii, mutta teksti asettuu nyt väärin */
     padding-left: 0;
     padding-right: 0;
     margin-left: 0;
